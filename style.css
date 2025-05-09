@@ -163,13 +163,119 @@ body {
 
 /*------ HOME -----*/
 .right_content img {
-    height: 80%;
+    height: 100%;
     width: 80%;
     border-radius: 100% / 100%;
     overflow: hidden;
+    float: right;
 }
 .home_page {
     height: 100vh;
     width: 100%;
     position: relative;
 }
+
+.message_bubble {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: auto;
+    background-color: var(--secondary-bg-color);
+}
+.triangle:after {
+    content: "";
+    position: absolute;
+    left: 40%;
+    border: 15px solid;
+    border-color: var(--secondary-bg-color) transparent transparent transparent;
+}
+
+.message_text {
+    padding: 1rem;
+}
+
+.home_buttons button {
+    padding: 1rem 2rem;
+    color: var(--font-color);
+}
+
+.home_buttons a {
+    background-color: var(--secondary-bg-color);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+.home_buttons button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-width: thin;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+    .message_bubble {
+        width: 160px;
+    }
+    .home_buttons a {
+        padding: 1rem 1rem !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .home_page{
+        padding-top: 10rem;
+    }
+}
+
+/*---About Me---*/
+.about_me .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10% 10%;
+    object-fit: cover;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 0.6rem;
+    position: relative;
+    background-color: #707070;
+}
+
+.progress_bar span {
+    height: 100%;
+    position: absolute;
+}
+.progress_javascript span {
+    background-color: #042299;
+    width: 100%;
+}
+.progress_cloudAws span {
+    background-color: #042260;
+    width: 90%;
+}
+.progress_html span {
+    background-color: #042250;
+    width: 80%;
+}
+.progress_css span {
+    background-color: #042250;
+    width: 80%;
+}
+.progress_docker span {
+    background-color: #042240;
+    width: 70%;
+}
+
+/*----LLAmada a la Accion----*/
+
+.llamada {
+    height: 50vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

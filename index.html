@@ -48,19 +48,19 @@
       class="home_page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
       <div class="left_content col-12 xl:col-6">
         <div class="message_bubble triangle mb-4 mb:mb-2">
-          <div class="message_text p-2 sm:p-3 text center">
+          <div class="message_text p-2 sm:p-3 text-center">
             <p>Hola, Yo soy</p>
           </div>
         </div>
         <h1 class="text-3xl sm:text-5xl md:text-7xl">Erick Noguera</h1>
-        <p class="text-gray-500">
+        <p class="text-gray-500 pt-2">
           Full Stack Web Developer - Practitioner cloud AWS
         </p>
-        <div class="home_button flex align-items-center gap-2 mt-6">
+        <div class="home_buttons flex align-items-center gap-2 mt-6">
           <a href="./asets/Curriculo plano Erick Noguera PDF.pdf" aria-label="Descargar curriculum"
             class="cursor-pointer border-round-lg" download>Descargar CV</a>
-            <button aria-label="Deslizar a seccion portafolio para mostrar mis trabajos"
-                class="cursor-pointer border-round-lg">Mi trabajo</button>
+          <button aria-label="Deslizar a seccion portafolio para mostrar mis trabajos"
+            class="cursor-pointer border-round-lg">Mi trabajo</button>
         </div>
       </div>
       <div class="right_content col-9 sm:col-6 xl:col-5">
@@ -68,8 +68,65 @@
       </div>
     </section>
     <!--ABOUT ME-->
-    <section id="about"></section>
+    <section id="about" class="about_me w-full min-h-screen flex align-items-center">
+      <div class="aboutme_content min-h-full flex flex-column md:flex-row pt-8 md:pt-0"></div>
+      <div class="aboutMe_info col-12 md:col-6 md:pr-6 pt-0">
+        <h1 class="text-3xl md:text-5xl">Sobre Mi</h1>
+        <p class="text-gray-500">Backend Developer y Cloud Practitioner AWS con experiencia en ventas, lo que me ha
+          proporcionado habilidades en escucha activa y persuasión. Me estoy certificando como AWS Cloud Practitioner y
+          he adquirido conocimientos en tecnologías como Linux, infraestructura como código y Docker. Especializado en
+          desarrollo Backend, con experiencia en metodologías ágiles (Scrum), Git, estructuras de datos, algoritmos y
+          frameworks CSS (Bootstrap). Manejo tecnologías clave como Express, GitHub y tengo experiencia en desarrollo de
+          aplicaciones Backend y Frontend.
+
+          Poseo experiencia con tecnologías Backend y Frontend como Node.js, TypeScript y React, además de bases de
+          datos SQL y NoSQL, incluyendo MongoDB, PostgreSQL y Mongoose. Cuento con habilidades para el trabajo en
+          equipo, resolución de problemas, comunicación efectiva y organización. Me apasiona la tecnología y resolver
+          problemas. Estudié en Generación Chile y participé en proyectos reales como "Sí, Voy", una empresa de viajes
+          inclusivos en Argentina.</p>
+        <div class="knowledge flex flex-column gap-3 mt-5">
+          <p>JavaScrip 100%</p>
+          <div class="progress_bar progress_javascript">
+            <span></span>
+          </div>
+          <p>Cloud AWS 90%</p>
+          <div class="progress_bar progress_cloudAws">
+            <span></span>
+          </div>
+          <p>HTML 80%</p>
+          <div class="progress_bar progress_html">
+            <span></span>
+          </div>
+          <p>CSS 80%</p>
+          <div class="progress_bar progress_css">
+            <span></span>
+          </div>
+          <p>Docker 70%</p>
+          <div class="progress_bar progress_docker">
+            <span></span>
+          </div>
+        </div>
+        <div class="hireMe_button pt-4">
+          <a href="mailTo:erick.noguera0410@gmail.com" aria-label="Enviar mensaje al correo"
+            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+        </div>
+      </div>
+      <div class="image col p-0 mt-6 md:mt-0">
+        <img src="./asets/imagen de programador trabajando.png" alt="Foto relacionada a acerca de mi" width="100"
+          height="100">
+      </div>
   </div>
+  </section>
+  </div>
+  <!--LLAMADA A LA ACCION-->
+  <section class="llamada mb-4 min-w-full flex flex-column justify-content-center align-items-center">
+    <p class="text-sm">Necesitas un Buen Elemento en tu Equipo?</p>
+    <h1 class="text-center">Estoy disponible ya mismo</h1>
+    <div class="hireMe_button pt-4">
+          <a href="mailTo:erick.noguera0410@gmail.com" aria-label="Enviar mensaje al correo"
+            class="cursor-pointer no-underline border-round-lg">Escribeme</a>
+        </div>
+  </section>
   <!--SERVICES-->
   <section id="services"></section>
 
