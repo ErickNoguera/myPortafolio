@@ -7,7 +7,7 @@
 :root {
     --bg-color: #000;
     --font-color: #fff;
-    --secondary-bg-color: #0033ff;
+    --secondary-bg-color: #041f5c;
     --font: "Poppins";
 }
 body { 
@@ -17,7 +17,7 @@ body {
     height: 100vw;
 }
 .container {
-    padding: 0rem 12rem 0 12rem;
+    padding: 0rem 12rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -27,3 +27,149 @@ body {
 }
 
 /*<!--HEADER-->*/
+.navbar {
+    padding: 0 12rem;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 100% / 100%;
+    overflow: hidden;
+}
+
+.header_info ul li {
+    padding: 2.5rem 1.2rem 1rem 1.2rem;
+    cursor: pointer;
+}
+
+.hireMe_button a {
+    background-color: var(--secondary-bg-color);
+    color: var(--font-color);
+    font-family: var(--font);
+    font-size: small;
+    padding: 1rem 1.5rem;
+    border-color: unset;
+    border-width: 0;
+}
+.header_info li:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+/*Responsive design navbar*/
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 2rem;
+    }
+    .navbar .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 2rem;
+        right: 2rem;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar .hamburger_lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar .hamburger_lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #fff;
+    }
+    .navbar .hamburger_lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .hamburger_lines .line2 {
+        transition: transform 0.4s ease-in-out;
+    }
+    .navbar .hamburger_lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .header_info ul li {
+        padding: 0;
+        margin: 2rem 0;
+        cursor: pointer;
+        font-size: xx-large;
+    }
+
+    .header_info ul li:hover {
+        background-color: unset;
+    }
+
+    .header_info {
+        padding-top: 120px;
+        height: 100vh;
+        background: var(--secondary-bg-color);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: auto;
+        transform: translate(150%);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .header_info {
+        transform: translateX(0);
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .hamburger_lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .hamburger_lines .line2 {
+        transform: scaleY(0);
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .hamburger_lines .line3 {
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar{
+        padding: 0 12rem;
+    }
+    .navbar .checkbox, .navbar .hamburger_lines {
+        right: 12rem;
+    }
+}
+
+/*------ HOME -----*/
+.right_content img {
+    height: 80%;
+    width: 80%;
+    border-radius: 100% / 100%;
+    overflow: hidden;
+}
+.home_page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}

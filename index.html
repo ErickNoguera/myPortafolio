@@ -1,45 +1,81 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Template portafolio " />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/primeflex@latest/primeflex.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/primeflex/themes/primeone-light.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/b3f171dac.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <h1>Hola Mundo</h1>
-    <!--HEADER-->
-    <header class="flex w-full fixed top-0 z-1">
-      <nav class="flex justify-content-between w-full navbar">
-        <span class="logo cursor-pointer">
-          <img src="./asets/Logo Erick Noguera.png" alt="logo portafolio" />
-        </span>
-      </nav>
-    </header>
-    <!--HOME PAGE-->
-    <section id="home"></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Template portafolio " />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+  <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/primeone-light.css">
+  <script src="https://kit.fontawesome.com/b3f171dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>hola mundo</h1>
+  <!--HEADER-->
+  <header class="flex w-full fixed top-0 z-1">
+    <nav class="flex justify-content-between w-full navbar">
+      <span class="logo cursor-pointer">
+        <img src="./asets/Logo Erick Noguera.png" alt="logo portafolio" />
+      </span>
+      <input type="checkbox" aria-label="checkbox para mostrar y quitar hamburger menu" class="checkbox xl:hidden">
+      <div class="hamburger_lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="header_info flex align-items-center gap-3">
+        <ul class="flex flex-column xl:flex-row list-none">
+          <li>Sobre mi</li>
+          <li>Servicios</li>
+          <li>Portafolio</li>
+          <li>Contacto</li>
+        </ul>
+        <div class="hireMe_button pt-4">
+          <a href="mailTo:erick.noguera0410@gmail.com" aria-label="Enviar mensaje al correo"
+            class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!--HOME PAGE-->
+  <div class="container">
+    <section id="home"
+      class="home_page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+      <div class="left_content col-12 xl:col-6">
+        <div class="message_bubble triangle mb-4 mb:mb-2">
+          <div class="message_text p-2 sm:p-3 text center">
+            <p>Hola, Yo soy</p>
+          </div>
+        </div>
+        <h1 class="text-3xl sm:text-5xl md:text-7xl">Erick Noguera</h1>
+        <p class="text-gray-500">
+          Full Stack Web Developer - Practitioner cloud AWS
+        </p>
+        <div class="home_button flex align-items-center gap-2 mt-6">
+          <a href="./asets/Curriculo plano Erick Noguera PDF.pdf" aria-label="Descargar curriculum"
+            class="cursor-pointer border-round-lg" download>Descargar CV</a>
+            <button aria-label="Deslizar a seccion portafolio para mostrar mis trabajos"
+                class="cursor-pointer border-round-lg">Mi trabajo</button>
+        </div>
+      </div>
+      <div class="right_content col-9 sm:col-6 xl:col-5">
+        <img src="./asets/foto de perfil.jpg" alt="foto perfil" width="100" height="100">
+      </div>
+    </section>
     <!--ABOUT ME-->
     <section id="about"></section>
+  </div>
+  <!--SERVICES-->
+  <section id="services"></section>
 
-    <!--SERVICES-->
-    <section id="services"></section>
+  <!--PORTFOLIO-->
+  <section id="portfolio"></section>
+</body>
+<script></script>
 
-    <!--PORTFOLIO-->
-    <section id="portfolio"></section>
-  </body>
-  <script></script>
 </html>
