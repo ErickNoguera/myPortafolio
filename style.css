@@ -122,7 +122,7 @@ body {
 
     .header_info {
         padding-top: 120px;
-        height: 100vh;
+        height: 100dvh;
         background: var(--secondary-bg-color);
         width: 100%;
         position: absolute;
@@ -273,7 +273,7 @@ body {
 
 .llamada {
     height: 50vh;
-    background-image: url();
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(./asets/imagen\ de\ la\ seccion\ contratame.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
