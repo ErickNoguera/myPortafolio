@@ -7,7 +7,7 @@
 :root {
     --bg-color: #000;
     --font-color: #fff;
-    --secondary-bg-color: #041f5c;
+    --secondary-bg-color: rgb(4, 31, 93);
     --font: "Poppins";
 }
 body { 
