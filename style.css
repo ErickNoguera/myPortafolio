@@ -279,32 +279,6 @@ body {
     background-position: center;
 }
 
-/*----SERVICES----*/
-/*.services {
-    padding-top: 81px;
-}
-.card {
-    background-color: #111111;
-    transition: all0.2s ease-in;
-}
-.service_logo {
-    height: 60px;
-    width: 60px;
-    background-color: #000;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
-}
-
-.card {
-  background-color: #111111;
-  transition: all 0.3s ease-in-out;
-  padding: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap; /* Permite que el contenido baje sin romper */
 
 .card {
     background-color: #111111;
