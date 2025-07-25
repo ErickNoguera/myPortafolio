@@ -164,8 +164,8 @@ body {
 /*------ HOME -----*/
 .right_content img {
     height: 100%;
-    width: 80%;
-    border-radius: 100% / 100%;
+    width: 70%;
+    border-radius: 100% / 80%;
     overflow: hidden;
     float: right;
 }
@@ -253,20 +253,20 @@ body {
     width: 100%;
 }
 .progress_cloudAws span {
-    background-color: #042260;
-    width: 90%;
+    background-color: #042299;
+    width: 100%;
 }
 .progress_html span {
-    background-color: #042250;
-    width: 80%;
+    background-color: #042299;
+    width: 100%;
 }
 .progress_css span {
-    background-color: #042250;
-    width: 80%;
+    background-color: #042299;
+    width: 100%;
 }
 .progress_docker span {
-    background-color: #042240;
-    width: 70%;
+    background-color: #042299;
+    width: 100%;
 }
 
 /*----LLAmada a la Accion----*/
