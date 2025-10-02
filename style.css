@@ -273,7 +273,7 @@ body {
 
 .llamada {
     height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(./asets/imagen\ de\ la\ seccion\ contratame.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(./asets/imagen\ de\ la\ seccion\ contratame.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
