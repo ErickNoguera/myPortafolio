@@ -350,3 +350,307 @@ body {
 }
 
 
+/*---- PORTFOLIO GALLERY ----*/
+
+.portfolio_galery {
+    width: 100%;
+}
+
+.galery_categories ul {
+    padding: 0;
+    margin: 0;
+}
+
+.filter-item {
+    padding: 0.75rem 1.5rem;
+    background-color: #111111;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.filter-item:hover {
+    background-color: var(--secondary-bg-color);
+    transform: translateY(-2px);
+}
+
+.filter-item.active {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Grid de Proyectos - CAMBIO PRINCIPAL */
+.proyect_galery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Dos columnas en pantallas grandes (desktop) */
+@media screen and (min-width: 992px) {
+    .proyect_galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Proyecto Cards */
+.proyect_card {
+    background-color: #111111;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.proyect_card.show {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.proyect_card:hover {
+    transform: translateY(-8px);
+    background-color: var(--secondary-bg-color);
+}
+
+/* Imagen del Proyecto */
+.proyect_image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, var(--secondary-bg-color) 0%, #042299 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.proyect_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.proyect_card:hover .proyect_image img {
+    transform: scale(1.05);
+}
+
+.proyect_image i {
+    font-size: 4rem;
+    color: white;
+    opacity: 0.4;
+}
+
+/* Contenido del Proyecto */
+.proyect_content {
+    padding: 1.5rem;
+}
+
+.proyect_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 0.3rem;
+}
+
+.proyect_subtitle {
+    color: #707070;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.proyect_role {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(4, 31, 93, 0.3);
+    border-radius: 6px;
+}
+
+.proyect_role i {
+    color: var(--secondary-bg-color);
+}
+
+.proyect_card:hover .proyect_role {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.proyect_description {
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Tecnologías */
+.proyect_tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech_tag {
+    background-color: #000;
+    color: var(--font-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.tech_tag i {
+    font-size: 0.9rem;
+}
+
+.proyect_card:hover .tech_tag {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Impacto del Proyecto */
+.proyect_impact {
+    background-color: rgba(4, 31, 93, 0.2);
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-bg-color);
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.proyect_card:hover .proyect_impact {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.proyect_impact strong {
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.proyect_impact strong i {
+    color: var(--secondary-bg-color);
+}
+
+.proyect_impact p {
+    margin: 0;
+    color: #b0b0b0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Links del Proyecto */
+.proyect_links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+.proyect_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--font-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.proyect_link:hover {
+    background-color: #042299;
+    transform: translateX(4px);
+}
+
+.proyect_link.secondary {
+    background-color: #000;
+    border: 1px solid var(--secondary-bg-color);
+}
+
+.proyect_link.secondary:hover {
+    background-color: var(--secondary-bg-color);
+    transform: translateX(4px);
+}
+
+/* Responsive Design para Portfolio */
+@media screen and (max-width: 991px) {
+    .proyect_galery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .proyect_image {
+        height: 200px;
+    }
+
+    .proyect_content {
+        padding: 1rem;
+    }
+
+    .proyect_title {
+        font-size: 1.2rem;
+    }
+
+    .proyect_links {
+        flex-direction: column;
+    }
+
+    .proyect_link {
+        justify-content: center;
+    }
+
+    .filter-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .galery_categories ul {
+        gap: 0.5rem !important;
+    }
+
+    .filter-item {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .proyect_tech {
+        gap: 0.3rem;
+    }
+
+    .tech_tag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+}

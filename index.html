@@ -1,244 +1,823 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio " />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="Description" content="Template portafolio " />
-  <title>Portafolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex@latest/primeflex.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex/themes/primeone-light.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f90d2228a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
-  <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/primeone-light.css">
-  <script src="https://kit.fontawesome.com/6f90d2228a.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <h1>hola mundo</h1>
-  <!--HEADER-->
-  <header class="flex w-full fixed top-0 z-1">
-    <nav class="flex justify-content-between w-full navbar">
-      <span class="logo cursor-pointer">
-        <img src="./asets/Logo Erick Noguera.png" alt="logo portafolio" />
-      </span>
-      <input type="checkbox" aria-label="checkbox para mostrar y quitar hamburger menu" class="checkbox xl:hidden">
-      <div class="hamburger_lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div>
-      <div class="header_info flex align-items-center gap-3">
-        <ul class="flex flex-column xl:flex-row list-none">
-          <li>Sobre mi</li>
-          <li>Servicios</li>
-          <li>Portafolio</li>
-          <li>Contacto</li>
-        </ul>
-        <div class="hireMe_button pt-4">
-          <a href="mailTo:erick.noguera0410@gmail.com" aria-label="Enviar mensaje al correo"
-            class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+  <body>
+    <h1>hola mundo</h1>
+    <!--HEADER-->
+    <header class="flex w-full fixed top-0 z-1">
+      <nav class="flex justify-content-between w-full navbar">
+        <span class="logo cursor-pointer">
+          <img src="./asets/Logo Erick Noguera.png" alt="logo portafolio" />
+        </span>
+        <input
+          type="checkbox"
+          aria-label="checkbox para mostrar y quitar hamburger menu"
+          class="checkbox xl:hidden"
+        />
+        <div class="hamburger_lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
-      </div>
-    </nav>
-
-  </header>
-  <!--HOME PAGE-->
-  <div class="container">
-    <section id="home"
-      class="home_page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
-      <div class="left_content col-12 xl:col-6">
-        <div class="message_bubble triangle mb-4 mb:mb-2">
-          <div class="message_text p-2 sm:p-3 text-center">
-            <p>Hola, Yo soy</p>
+        <div class="header_info flex align-items-center gap-3">
+          <ul class="flex flex-column xl:flex-row list-none">
+            <li>Sobre mi</li>
+            <li>Servicios</li>
+            <li>Portafolio</li>
+            <li>Contacto</li>
+          </ul>
+          <div class="hireMe_button pt-4">
+            <a
+              href="mailTo:erick.noguera0410@gmail.com"
+              aria-label="Enviar mensaje al correo"
+              class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm"
+              >Contratame</a
+            >
           </div>
         </div>
-        <h1 class="text-3xl sm:text-5xl md:text-7xl">Erick Noguera</h1>
-        <p class="text-gray-500 pt-2">
-          Full Stack Web Developer - Practitioner cloud AWS
-        </p>
-        <div class="home_buttons flex align-items-center gap-2 mt-6">
-          <a href="./asets/Curriculo Erick Noguera3.pdf" aria-label="Descargar curriculum"
-            class="cursor-pointer border-round-lg" download>Descargar CV</a>
-          <button aria-label="Deslizar a seccion portafolio para mostrar mis trabajos"
-            class="cursor-pointer border-round-lg">Mi trabajo</button>
+      </nav>
+    </header>
+    <!--HOME PAGE-->
+    <div class="container">
+      <section
+        id="home"
+        class="home_page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4"
+      >
+        <div class="left_content col-12 xl:col-6">
+          <div class="message_bubble triangle mb-4 mb:mb-2">
+            <div class="message_text p-2 sm:p-3 text-center">
+              <p>Hola, Yo soy</p>
+            </div>
+          </div>
+          <h1 class="text-3xl sm:text-5xl md:text-7xl">Erick Noguera</h1>
+          <p class="text-gray-500 pt-2">
+            Full Stack Web Developer - Practitioner cloud AWS
+          </p>
+          <div class="home_buttons flex align-items-center gap-2 mt-6">
+            <a
+              href="./asets/Curriculo Erick Noguera3.pdf"
+              aria-label="Descargar curriculum"
+              class="cursor-pointer border-round-lg"
+              download
+              >Descargar CV</a
+            >
+            <button
+              aria-label="Deslizar a seccion portafolio para mostrar mis trabajos"
+              class="cursor-pointer border-round-lg"
+            >
+              Mi trabajo
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="right_content col-9 sm:col-6 xl:col-5">
-        <img src="./asets/Imagen de perfil con traje.png"foto perfil" width="100" height="100">
+        <div class="right_content col-9 sm:col-6 xl:col-5">
+          <img
+            src="./asets/Imagen de perfil con traje.png"
+            alt="foto perfil"
+            width="100"
+            height="100"
+          />
+        </div>
+      </section>
+      <!--ABOUT ME-->
+      <section
+        id="about"
+        class="about_me w-full min-h-screen flex align-items-center"
+      >
+        <div
+          class="aboutme_content min-h-full flex flex-column md:flex-row pt-8 md:pt-0"
+        >
+          <div class="aboutMe_info col-12 md:col-6 md:pr-6 pt-0">
+            <h1 class="text-3xl md:text-5xl pb-1">Sobre Mi</h1>
+            <p class="text-gray-250">
+              Soy Erick Noguera, desarrollador backend con mentalidad full stack
+              que vive y respira tecnología. Me formé en Henry Tech LLC, donde
+              tuve el privilegio de trabajar en proyectos reales como la
+              reestructuración de "Sí, Voy", una plataforma de turismo inclusivo
+              en Argentina. Allí entendí que el código es solo una parte del
+              impacto: lo importante es cómo trabajamos en equipo para crear
+              soluciones reales. <br /><br />
+              Recientemente obtuve mi certificación AWS Cloud Practitioner,
+              luego de una preparación intensiva con Generation Chile, lo que
+              consolidó aún más mi enfoque en soluciones eficientes y escalables
+              en la nube. Trabajo con herramientas como Node.js, TypeScript,
+              Express, React, PostgreSQL, MongoDB, Docker y Linux. Además, mi
+              experiencia previa en ventas me dio una ventaja diferencial:
+              escucho, me comunico, organizo y colaboro con fluidez. No solo me
+              adapto rápido a los cambios, también sumo al equipo, "NO" solo
+              hago código.
+              <br /><br />
+              Estoy siempre en busca del próximo desafío donde pueda aportar,
+              crecer y aprender. Si tu equipo valora tanto la calidad técnica
+              como la colaboración real, me encantaría ser parte de él.
+            </p>
+            <div class="knowledge flex flex-column gap-3 mt-5">
+              <p>JavaScrip</p>
+              <div class="progress_bar progress_javascript">
+                <span></span>
+              </div>
+              <p>Cloud AWS</p>
+              <div class="progress_bar progress_cloudAws">
+                <span></span>
+              </div>
+              <p>HTML</p>
+              <div class="progress_bar progress_html">
+                <span></span>
+              </div>
+              <p>CSS</p>
+              <div class="progress_bar progress_css">
+                <span></span>
+              </div>
+              <p>Docker</p>
+              <div class="progress_bar progress_docker">
+                <span></span>
+              </div>
+            </div>
+            <div class="hireMe_button pt-4 mb-6">
+              <a
+                href="mailTo:erick.noguera0410@gmail.com"
+                aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg"
+                >Contratame</a
+              >
+            </div>
+          </div>
+          <div class="image col p-0 mt-6 md:mt-0 mb-4">
+            <img
+              src="./asets/imagen de programador trabajando.png"
+              alt="Foto relacionada a acerca de mi"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--LLAMADA A LA ACCION-->
+    <section
+      class="llamada mb-4 min-w-full flex flex-column justify-content-center align-items-center"
+    >
+      <p class="text-sm">Necesitas un Buen Elemento en tu Equipo?</p>
+      <h1 class="text-center pt-2 pb-2">Estoy disponible ya mismo</h1>
+      <div class="hireMe_button pt-4">
+        <a
+          href="mailTo:erick.noguera0410@gmail.com"
+          aria-label="Enviar mensaje al correo"
+          class="cursor-pointer no-underline border-round-lg"
+          >Escribeme</a
+        >
       </div>
     </section>
-    <!--ABOUT ME-->
-    <section id="about" class="about_me w-full min-h-screen flex align-items-center">
-      <div class="aboutme_content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
-      <div class="aboutMe_info col-12 md:col-6 md:pr-6 pt-0">
-        <h1 class="text-3xl md:text-5xl pb-1">Sobre Mi</h1>
-        <p class="text-gray-250">Soy Erick Noguera, desarrollador backend con mentalidad full stack que vive y respira
-          tecnología. Me formé en Henry Tech LLC, donde tuve el privilegio de trabajar en proyectos reales como la
-          reestructuración de “Sí, Voy”, una plataforma de turismo inclusivo en Argentina. Allí entendí que el código es
-          solo una parte del impacto: lo importante es cómo trabajamos en equipo para crear soluciones reales.
-          <br><br>
-          Recientemente obtuve mi certificación AWS Cloud Practitioner, luego de una preparación intensiva con
-          Generation Chile, lo que consolidó aún más mi enfoque en soluciones eficientes y escalables en la nube.
-          Trabajo con herramientas como Node.js, TypeScript, Express, React, PostgreSQL, MongoDB, Docker y Linux.
+    <!--SERVICES-->
+    <div class="container">
+      <section id="services" class="services min-h-full pb-7">
+        <div class="services_tittle flex flex-column gap-3 text-center">
+          <h1 class="text-5xl">Mis Servicios</h1>
+          <p class="text-gray-400 text-sm md:text-base">
+            Ofrezco soluciones tecnológicas enfocadas en desarrollo Backend,
+            despliegue en la nube con AWS y construcción de aplicaciones web
+            modernas. Trabajo con herramientas robustas y actuales para crear
+            productos funcionales, escalables y bien estructurados.
+            <br />
+            Aquí algunos de los servicios que puedo ofrecer:
+          </p>
+        </div>
+        <div class="services_card w-full grid grid-nogutter mt-7 gap-5">
+          <div
+            class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-aws"></i>
+            </div>
+            <div class="service_name">
+              <p>AWS</p>
+              <span class="service_desc"
+                >Despliegue y administración en la nube con EC2, S3,
+                cloudformation, RDS y CloudWatch.</span
+              >
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="service_name">
+              <p>HTML</p>
+              <span class="service_desc"
+                >Construcción de interfaces web semánticas y accesibles.</span
+              >
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-docker"></i>
+            </div>
+            <div class="service_name">
+              <p>DOCKER</p>
+              <span class="service_desc"
+                >Contenerización de aplicaciones para entornos portables y
+                consistentes.</span
+              >
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <div class="service_name">
+              <p>NodeJS</p>
+              <span class="service_desc"
+                >Desarrollo de servidores y APIs rápidas con JavaScript y
+                TypeScript.</span
+              >
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="service_name">
+              <p>PostgreSQL</p>
+              <span class="service_desc"
+                >Gestión de datos robusta y consultas SQL eficientes.</span
+              >
+            </div>
+          </div>
+          <div
+            class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2"
+          >
+            <div
+              class="service_logo flex align-items-center justify-content-center"
+            >
+              <i class="fa-brands fa-linux"></i>
+            </div>
+            <div class="service_name">
+              <p>LINUX</p>
+              <span class="service_desc"
+                >Automatización, scripting y gestión de entornos de
+                servidor.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-          Además, mi experiencia previa en ventas me dio una ventaja diferencial: escucho, me comunico, organizo y
-          colaboro con fluidez. No solo me adapto rápido a los cambios, también sumo al equipo, "NO" solo hago código.
-          <br><br>
-          Estoy siempre en busca del próximo desafío donde pueda aportar, crecer y aprender. Si tu equipo valora tanto
-          la calidad técnica como la colaboración real, me encantaría ser parte de él.
-        </p>
-        <div class="knowledge flex flex-column gap-3 mt-5">
-          <p>JavaScrip </p>
-          <div class="progress_bar progress_javascript">
-            <span></span>
+      <!--PORTFOLIO-->
+      <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+        <div class="portfolio_title flex flex-column gap-3 text-center">
+          <h1 class="text-5xl">Mi Trabajo</h1>
+          <p class="text-gray-400 text-sm md:text-base">
+            Cada proyecto en el que he participado ha sido una oportunidad para
+            crecer, desafiarme y llevar mis habilidades al siguiente nivel. He
+            trabajado en entornos colaborativos, enfrentado retos técnicos
+            reales y contribuido al desarrollo de soluciones funcionales y con
+            impacto.
+            <br />
+            Aquí encontrarás una selección de trabajos donde he puesto en
+            práctica mi enfoque backend, el uso de tecnologías modernas y buenas
+            prácticas de desarrollo. Desde la reestructuración completa de
+            plataformas web hasta la implementación de APIs, bases de datos
+            eficientes y despliegues en la nube.
+            <br />
+            Estos proyectos reflejan lo que más disfruto hacer: convertir ideas
+            en sistemas que funcionen bien, escalen y se mantengan sólidos en el
+            tiempo.
+            <br />
+          </p>
+        </div>
+
+        <div class="portfolio_galery">
+          <div class="galery_categories mb-5 mt-5">
+            <ul class="flex list-none flex-wrap justify-content-center gap-3">
+              <li class="filter-item active" data-filter="all">Todos</li>
+              <li class="filter-item" data-filter="si_voy">
+                Si,voy (Turismo inclusivo)
+              </li>
+              <li class="filter-item" data-filter="e_commerce">
+                E-comerce (API RESTful)
+              </li>
+              <li class="filter-item" data-filter="aboutme">
+                Aboutme (devops)
+              </li>
+              <li class="filter-item" data-filter="peliculas">
+                Peliculas (Erick Films)
+              </li>
+              <li class="filter-item" data-filter="autovolt">
+                Auto-volt.cl (Proyecto Real)
+              </li>
+              <li class="filter-item" data-filter="iu_tienda_online">
+                IU Tienda Online (Proyecto Real)
+              </li>
+            </ul>
           </div>
-          <p>Cloud AWS </p>
-          <div class="progress_bar progress_cloudAws">
-            <span></span>
-          </div>
-          <p>HTML </p>
-          <div class="progress_bar progress_html">
-            <span></span>
-          </div>
-          <p>CSS </p>
-          <div class="progress_bar progress_css">
-            <span></span>
-          </div>
-          <p>Docker </p>
-          <div class="progress_bar progress_docker">
-            <span></span>
+
+          <!-- Grid de proyectos -->
+          <div class="proyect_galery mt-5">
+            <!-- Proyecto 1: Si, Voy -->
+            <div class="proyect_card show" data-category="si_voy">
+              <div class="proyect_image">
+                <img
+                  src="./asets/Si, Voy/Captura de pantalla 2025-06-27 144531.png"
+                  alt="Plataforma Si Voy"
+                />
+              </div>
+              <div class="proyect_content">
+                <h3 class="proyect_title">Si, Voy (Proyecto Real)</h3>
+                <span class="proyect_subtitle"
+                  >Plataforma de Turismo Inclusivo</span
+                >
+
+                <div class="proyect_role">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>Backend Developer | Reestructuración Completa</span>
+                </div>
+
+                <p class="proyect_description">
+                  Participé en la reestructuración completa del backend de Si,
+                  Voy, una plataforma de turismo inclusivo en Argentina.
+                  Implementé mejoras en la arquitectura de la API, optimicé
+                  consultas a la base de datos y colaboré estrechamente con el
+                  equipo frontend para garantizar una integración fluida.
+                </p>
+
+                <div class="proyect_tech">
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-node-js"></i> Node.js</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-js"></i> TypeScript</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-database"></i> PostgreSQL</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-react"></i> Express</span
+                  >
+                </div>
+
+                <div class="proyect_impact">
+                  <strong
+                    ><i class="fa-solid fa-chart-line"></i> Mi Aporte e
+                    Impacto:</strong
+                  >
+                  <p>
+                    Este proyecto me enseñó a trabajar en equipo en un entorno
+                    real, a tomar decisiones de arquitectura y a entender que el
+                    código no es solo funcionalidad, sino también mantenibilidad
+                    y escalabilidad.
+                  </p>
+                </div>
+
+                <div class="proyect_links">
+                  <a
+                    href="#"
+                    class="proyect_link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-github"></i> Ver Código
+                  </a>
+                  <a
+                    href="#"
+                    class="proyect_link secondary"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-solid fa-globe"></i> Ver Sitio
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 2: E-commerce API -->
+            <div class="proyect_card show" data-category="e_commerce">
+              <div class="proyect_image">
+                <img
+                  src="./asets/ecomerce-Erick/Captura de pantalla 2025-10-27 112030.png"
+                  alt="ecomerce_portada"
+                />
+              </div>
+              <div class="proyect_content">
+                <h3 class="proyect_title">E-commerce API RESTful</h3>
+                <span class="proyect_subtitle"
+                  >API Completa para Tienda Online</span
+                >
+
+                <div class="proyect_role">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>Full Stack Developer | Proyecto Personal</span>
+                </div>
+
+                <p class="proyect_description">
+                  Desarrollo de una API RESTful completa para un e-commerce,
+                  incluyendo autenticación JWT, gestión de productos, carrito de
+                  compras, órdenes y sistema de pagos. Implementé buenas
+                  prácticas de seguridad y documentación con Swagger.
+                </p>
+
+                <div class="proyect_tech">
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-node-js"></i> Node.js</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-js"></i> Express</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-database"></i> MongoDB</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-key"></i> JWT</span
+                  >
+                </div>
+
+                <div class="proyect_impact">
+                  <strong
+                    ><i class="fa-solid fa-chart-line"></i> Mi Aporte e
+                    Impacto:</strong
+                  >
+                  <p>
+                    Este proyecto consolidó mi conocimiento en arquitectura de
+                    APIs, patrones de diseño y seguridad backend. Aprendí a
+                    estructurar proyectos escalables y a documentar código de
+                    forma profesional.
+                  </p>
+                </div>
+
+                <div class="proyect_links">
+                  <a
+                    href="#"
+                    class="proyect_link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-github"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 3: AboutMe DevOps -->
+            <div class="proyect_card show" data-category="aboutme">
+              <div class="proyect_image">
+                <img
+                  src="./asets/Sobre Mi/Captura de pantalla 2025-06-27 143525.png"
+                  alt="AboutMe DevOps"
+                />
+              </div>
+              <div class="proyect_content">
+                <h3 class="proyect_title">AboutMe</h3>
+                <span class="proyect_subtitle"
+                  >Despliegue y Automatización en AWS</span
+                >
+
+                <div class="proyect_role">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>DevOps Engineer | Infraestructura Cloud</span>
+                </div>
+
+                <p class="proyect_description">
+                  Proyecto enfocado en DevOps y Cloud Computing. Implementé
+                  infraestructura como código usando CloudFormation, configuré
+                  pipelines de CI/CD, y desplegué aplicaciones en EC2 con
+                  Docker. Monitoreo con CloudWatch y gestión de logs.
+                </p>
+
+                <div class="proyect_tech">
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-aws"></i> AWS EC2</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-docker"></i> Docker</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-cloud"></i> CloudFormation</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-linux"></i> Linux</span
+                  >
+                </div>
+
+                <div class="proyect_impact">
+                  <strong
+                    ><i class="fa-solid fa-chart-line"></i> Mi Aporte e
+                    Impacto:</strong
+                  >
+                  <p>
+                    Este proyecto reforzó mis conocimientos en AWS después de mi
+                    certificación Cloud Practitioner. Aprendí sobre
+                    infraestructura automatizada, contenedores y buenas
+                    prácticas de despliegue en producción.
+                  </p>
+                </div>
+
+                <div class="proyect_links">
+                  <a
+                    href="#"
+                    class="proyect_link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-github"></i> Ver Código
+                  </a>
+                  <a
+                    href="#"
+                    class="proyect_link secondary"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-solid fa-diagram-project"></i> Arquitectura
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 4: Erick Films -->
+            <div class="proyect_card show" data-category="peliculas">
+              <div class="proyect_image">
+                <img
+                  src="./asets/Erick Film/Captura de pantalla 2025-06-27 142601.png"
+                  alt="Erick Films"
+                />
+              </div>
+              <div class="proyect_content">
+                <h3 class="proyect_title">Erick Films</h3>
+                <span class="proyect_subtitle"
+                  >Plataforma de Catálogo de Películas</span
+                >
+
+                <div class="proyect_role">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>Full Stack Developer | Proyecto Personal</span>
+                </div>
+
+                <p class="proyect_description">
+                  Aplicación web para explorar y gestionar un catálogo de
+                  películas. Integración con API externa para obtener
+                  información de películas, sistema de búsqueda avanzada,
+                  favoritos y reseñas. Interface responsive y moderna.
+                </p>
+
+                <div class="proyect_tech">
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-react"></i> React</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-node-js"></i> Node.js</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-html5"></i> HTML/CSS</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-server"></i> API REST</span
+                  >
+                </div>
+
+                <div class="proyect_impact">
+                  <strong
+                    ><i class="fa-solid fa-chart-line"></i> Mi Aporte e
+                    Impacto:</strong
+                  >
+                  <p>
+                    Proyecto que me permitió practicar la integración con APIs
+                    externas, manejo de estados complejos en React y diseño de
+                    interfaces de usuario intuitivas. Mejoré mis habilidades en
+                    frontend y gestión de datos.
+                  </p>
+                </div>
+
+                <div class="proyect_links">
+                  <a
+                    href="#"
+                    class="proyect_link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-github"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 5: Auto-volt.cl -->
+            <div class="proyect_card show" data-category="autovolt">
+              <div class="proyect_image">
+                <img
+                  src="./asets/Auto-volt.cl/Captura de pantalla 2025-10-24 103243.png"
+                  alt="Auto-volt.cl"
+                />
+              </div>
+              <div class="proyect_content">
+                <h3 class="proyect_title">Auto-volt.cl (Proyecto Real)</h3>
+                <span class="proyect_subtitle"
+                  >Plataforma de Vehículos Eléctricos</span
+                >
+
+                <div class="proyect_role">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>Backend Developer | Proyecto Colaborativo Real</span>
+                </div>
+
+                <p class="proyect_description">
+                  Desarrollo de funcionalidades clave para una plataforma real
+                  de movilidad eléctrica en Chile. Implementé mejoras en
+                  endpoints con Django, automatizaciones con Selenium y un
+                  microservicio de scraping construido con Node.js, TypeScript y
+                  Stagehand, desplegado en GCP mediante entornos dockerizados.
+                </p>
+
+                <div class="proyect_tech">
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-python"></i> Python</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-database"></i> PostgreSQL</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-docker"></i> Docker</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-node-js"></i> Node.js</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-cloud"></i> GCP</span
+                  >
+                </div>
+                <div class="proyect_impact">
+                  <strong
+                    ><i class="fa-solid fa-chart-line"></i> Mi Aporte e
+                    Impacto:</strong
+                  >
+                  <p>
+                    Proyecto real orientado a movilidad eléctrica, donde aporté
+                    al desarrollo backend y a la automatización de procesos.
+                    Implementé un microservicio de scraping con Node.js +
+                    TypeScript (Stagehand), optimicé funcionalidades en
+                    Django/Python y participé en el despliegue de servicios
+                    dockerizados en GCP. Actualmente opera en producción.
+                  </p>
+                </div>
+
+                <div class="proyect_links">
+                  <a
+                    href="#"
+                    class="proyect_link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-brands fa-github"></i> Ver Código
+                  </a>
+                  <a
+                    href="#"
+                    class="proyect_link secondary"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-solid fa-globe"></i> Visitar Sitio
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Proyecto 6: IU Tienda Online -->
+            <div class="proyect_card show" data-category="iu_tienda_online">
+              <div class="proyect_image">
+                <img
+                  src="./asets/IU Tienda Online/Captura de pantalla 2025-11-29 133508.png"
+                  alt="IU tienda Online"
+                />
+              </div>
+              <div class="proyect_content">
+                <h3 class="proyect_title">IU Tienda Online (Proyecto Real)</h3>
+                <span class="proyect_subtitle">E-comerce Real Wordpress</span>
+
+                <div class="proyect_role">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span>Developer | Preyecto Real</span>
+                </div>
+
+                <p class="proyect_description">
+                  Proyecto real en el que desarrollé una tienda online funcional
+                  y totalmente operativa utilizando WordPress + WooCommerce. Me
+                  encargué de todo el proceso end-to-end: desde la planificación
+                  y diseño hasta el despliegue final en producción.
+                </p>
+
+                <div class="proyect_tech">
+                  <span class="tech_tag"
+                    ><i class="fa-brands fa-wordpress"></i> WordPress</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-layer-group"></i> WooCommerce</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-cart-shopping"></i> MercadoPago</span
+                  >
+                  <span class="tech_tag"
+                    ><i class="fa-solid fa-h"></i> Hostinger</span
+                  >
+                </div>
+
+                <div class="proyect_impact">
+                  <strong
+                    ><i class="fa-solid fa-chart-line"></i> Mi Aporte e
+                    Impacto:</strong
+                  >
+                  <p>
+                    Proyecto donde implementé una tienda completa con pagos y
+                    logística, fortaleciendo mi capacidad para llevar soluciones
+                    reales desde cero a producción.
+                  </p>
+                </div>
+
+                <div class="proyect_links">
+                  <a
+                    href="#"
+                    class="proyect_link secondary"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fa-solid fa-globe"></i> Visitar Sitio
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="hireMe_button pt-4 mb-6">
-          <a href="mailTo:erick.noguera0410@gmail.com" aria-label="Enviar mensaje al correo"
-            class="cursor-pointer no-underline border-round-lg">Contratame</a>
-        </div>
-      </div>
-      <div class="image col p-0 mt-6 md:mt-0 mb-4 ">
-        <img src="./asets/imagen de programador trabajando.png" alt="Foto relacionada a acerca de mi" width="100"
-          height="100">
-      </div>
-  </div>
-  </div>
-  </section>
-  </div>
-  <!--LLAMADA A LA ACCION-->
-  <section class="llamada mb-4 min-w-full flex flex-column justify-content-center align-items-center">
-    <p class="text-sm">Necesitas un Buen Elemento en tu Equipo?</p>
-    <h1 class="text-center pt-2 pb-2">Estoy disponible ya mismo</h1>
-    <div class="hireMe_button pt-4">
-      <a href="mailTo:erick.noguera0410@gmail.com" aria-label="Enviar mensaje al correo"
-        class="cursor-pointer no-underline border-round-lg">Escribeme</a>
+      </section>
+
+      <!--FOOTER-->
+      <section id="contact"></section>
     </div>
-  </section>
-  <!--SERVICES-->
-  <div class="container">
-    <section id="services" class="services min-h-full pb-7">
-      <div class="services_tittle flex flex-column gap-3 text-center">
-        <h1 class="text-5xl ">Mis Servicios</h1>
-        <p class="text-gray-400 text-sm md:text-base">Ofrezco soluciones tecnológicas enfocadas en desarrollo Backend,
-          despliegue en la nube con AWS y construcción de aplicaciones web modernas.
-          Trabajo con herramientas robustas y actuales para crear productos funcionales, escalables y bien
-          estructurados.
-          <br>
-          Aquí algunos de los servicios que puedo ofrecer:
-        </p>
-      </div>
-      <div class="services_card w-full grid grid-nogutter mt-7 gap-5 ">
-        <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-          <div class="service_logo flex align-items-center justify-content-center">
-            <i class="fa-brands fa-aws"></i>
-          </div>
-          <div class="service_name">
-            <p>AWS</p>
-            <span class="service_desc">Despliegue y administración en la nube con EC2, S3, cloudformation, RDS y CloudWatch.</span>
-          </div>
-        </div>
-        <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-          <div class="service_logo flex align-items-center justify-content-center">
-            <i class="fa-brands fa-html5"></i>
-          </div>
-          <div class="service_name">
-            <p>HTML</p>
-            <span class="service_desc">Construcción de interfaces web semánticas y accesibles.</span>
-          </div>
-        </div>
-        <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
-          <div class="service_logo flex align-items-center justify-content-center">
-            <i class="fa-brands fa-docker"></i>
-          </div>
-          <div class="service_name">
-            <p>DOCKER</p>
-            <span class="service_desc">Contenerización de aplicaciones para entornos portables y consistentes.</span>
-          </div>
-        </div>
-        <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-          <div class="service_logo flex align-items-center justify-content-center">
-            <i class="fa-brands fa-node-js"></i>
-          </div>
-          <div class="service_name">
-            <p>NodeJS</p>
-            <span class="service_desc">Desarrollo de servidores y APIs rápidas con JavaScript y TypeScript.</span>
-          </div>
-        </div>
-        <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-          <div class="service_logo flex align-items-center justify-content-center">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <div class="service_name">
-            <p>PostgreSQL</p>
-            <span class="service_desc">Gestión de datos robusta y consultas SQL eficientes.</span>
-          </div>
-        </div>
-        <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
-          <div class="service_logo flex align-items-center justify-content-center">
-            <i class="fa-brands fa-linux"></i>
-          </div>
-          <div class="service_name">
-            <p>LINUX</p>
-            <span class="service_desc">Automatización, scripting y gestión de entornos de servidor.</span>
-          </div>
-        </div>
-      </div>
-    </section>
+  </body>
 
-    <!--PORTFOLIO-->
-    <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8"></section>
-    <div class="portfolio_title flex flex-column gap-3 text-center">
-      <h1 class="text-5xl ">Mi Trabajo</h1>
-      <p class="text-gray-400 text-sm md:text-base">Cada proyecto en el que he participado ha sido una oportunidad para
-        crecer, desafiarme y llevar mis habilidades al siguiente nivel. He trabajado en entornos colaborativos,
-        enfrentado retos técnicos reales y contribuido al desarrollo de soluciones funcionales y con impacto.
-        <br>
-        Aquí encontrarás una selección de trabajos donde he puesto en práctica mi enfoque backend, el uso de tecnologías
-        modernas y buenas prácticas de desarrollo. Desde la reestructuración completa de plataformas web hasta la
-        implementación de APIs, bases de datos eficientes y despliegues en la nube.
-        <br>
-        Estos proyectos reflejan lo que más disfruto hacer: convertir ideas en sistemas que funcionen bien, escalen y se
-        mantengan sólidos en el tiempo.
-        <br>
-      </p>
-    </div>
-    <div class="portfolio_galery">
-      <div class="galery_categories mb-5 mt-5">
-        <ul class="flex list-none flex-wrap justify-content-center gap-3">
-          <li class="filter-item active" data-filter="all">Todos</li>
-          <li class="filter-item" data-filter="si_voy">Si,voy (Turismo inclusivo)</li>
-          <li class="filter-item" data-filter="e_comerece">E-comerce (API RESTful)</li>
-          <li class="filter-item" data-filter="aboutme">Aboutme (devops)</li>
-          <li class="filter-item" data-filter="peliculas">Peliculas (Erick Films)</li>
-        </ul>
-      </div>
-      <div class="proyect_galery flex justify-content-center align-items-center flex-wrap gap-3">
-        <div class="proyect_card tours_web">
+  <script>
+    // Funcionalidad de filtrado de proyectos
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterItems = document.querySelectorAll(".filter-item");
+      const proyectCards = document.querySelectorAll(".proyect_card");
 
-        </div>
-      </div>
-    </div>
-    <!--FOOTER-->
-    <section id="contact"></section>
-  </div>
-</body>
-<script></script>
+      filterItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          // Remover clase active de todos los filtros
+          filterItems.forEach((filter) => filter.classList.remove("active"));
 
+          // Agregar clase active al filtro clickeado
+          this.classList.add("active");
+
+          // Obtener el filtro seleccionado
+          const filterValue = this.getAttribute("data-filter");
+
+          // Mostrar/ocultar proyectos según el filtro
+          proyectCards.forEach((card) => {
+            if (filterValue === "all") {
+              card.classList.add("show");
+            } else {
+              const cardCategory = card.getAttribute("data-category");
+              if (cardCategory === filterValue) {
+                card.classList.add("show");
+              } else {
+                card.classList.remove("show");
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
 </html>
