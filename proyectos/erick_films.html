@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Proyecto Erick Films - Catálogo de Películas | Erick Noguera" />
+  <title>Erick Films | Erick Noguera</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/proyectos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+  <script src="https://kit.fontawesome.com/6f90d2228a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="project-detail-page">
+  
+  <!-- NAVIGATION -->
+  <nav class="project-nav">
+    <div class="container">
+      <a href="../index.html#portfolio" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Volver al Portafolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="project-category">Full Stack · JavaScript Vanilla + Webpack · Módulo 2 Bootcamp</span>
+        <h1 class="project-title">Erick Films</h1>
+        <p class="project-tagline">Catálogo de películas Full Stack con JavaScript modularizado, Webpack, Node.js y MongoDB desarrollado durante el bootcamp de Henry</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-calendar"></i>
+            <span>2024</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Full Stack Developer</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Proyecto Individual - Módulo 2 Henry</span>
+          </div>
+        </div>
+
+        <div class="project-links-hero">
+          <a href="https://github.com/ErickNoguera/erick_film.git" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i>
+            Ver Código en GitHub
+          </a>
+          <a href="https://github.com/ErickNoguera/erick_film/blob/main/README.md" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-book"></i>
+            Ver Documentación
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2 class="section-title">Galería del Proyecto</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item main-image">
+          <img src="../asets/Erick Film/Captura de pantalla 2025-06-27 142601.png" 
+               alt="Erick Films - Página Principal" 
+               class="gallery-img"
+               data-index="0">
+          <div class="image-caption">Página Principal con Catálogo de Películas</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Erick Film/Captura de pantalla 2025-06-27 142731.png" 
+               alt="Erick Films - Formulario de Carga" 
+               class="gallery-img"
+               data-index="1">
+          <div class="image-caption">Formulario para Agregar Nuevas Películas</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Erick Film/Captura de pantalla 2025-06-27 142838.png" 
+               alt="Erick Films - Detalle con Hover" 
+               class="gallery-img"
+               data-index="2">
+          <div class="image-caption">Vista de Detalle al Hacer Hover</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Erick Film/Captura de pantalla 2025-06-27 142945.png" 
+               alt="Erick Films - Modal de Información" 
+               class="gallery-img"
+               data-index="3">
+          <div class="image-caption">Modal con Información Completa de la Película</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+  </div>
+
+  <div class="container">
+    
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+      <h2 class="section-title">Sobre el Proyecto</h2>
+      <div class="section-content">
+        <p class="lead-text">
+          Erick Films fue mi primer proyecto Full Stack completo, desarrollado durante el Módulo 2 del bootcamp de 
+          Henry. Por primera vez conecté un frontend propio con un backend que yo mismo construí, manejé una base 
+          de datos en la nube, y estructuré un proyecto profesional con arquitectura separada cliente-servidor.
+        </p>
+        
+        <p>
+          El desafío consistía en crear un catálogo de películas funcional donde los usuarios pudieran visualizar 
+          películas desde la base de datos y agregar nuevas mediante un formulario con validaciones. Aunque 
+          seguimos la supervisión del instructor, cada estudiante implementó su propia solución de forma individual, 
+          cumpliendo requisitos técnicos específicos.
+        </p>
+
+        <p>
+          Los requisitos obligatorios incluían: formulario funcional con validaciones, base de datos no relacional 
+          (MongoDB), separación clara entre frontend y backend, consumo de API desde el cliente, y código modular 
+          bien estructurado. Este proyecto me enseñó los fundamentos de arquitectura Full Stack.
+        </p>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-star"></i> Mi Primer Full Stack</h3>
+          <p>
+            <strong>Contexto:</strong> Módulo 2 del Bootcamp Full Stack de Henry<br>
+            <strong>Modalidad:</strong> Proyecto individual con supervisión del instructor<br>
+            <strong>Requisitos:</strong> Formulario, MongoDB, separación frontend/backend, código modular<br>
+            <strong>Logro:</strong> Primera aplicación completa conectando todas las piezas del stack
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I BUILT -->
+    <section class="project-section">
+      <h2 class="section-title">¿Qué Construí?</h2>
+      <div class="section-content">
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Frontend Modular con Webpack</h3>
+            <p>
+              Construí el frontend con <strong>JavaScript vanilla puro</strong>, sin frameworks. Usé Webpack para 
+              empaquetar múltiples archivos JS en un bundle optimizado, configuré scripts de desarrollo y producción, 
+              y organicé el código en módulos separados por responsabilidad.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <h3>API REST con Express</h3>
+            <p>
+              Servidor <strong>Node.js + Express</strong> con arquitectura profesional: carpetas separadas para 
+              config/, controllers/, middleware/, models/ y routes/. Implementé endpoints CRUD completos, manejo 
+              de errores global y configuración de CORS.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>MongoDB en la Nube</h3>
+            <p>
+              Primera vez usando <strong>MongoDB Atlas</strong>. Configuré la conexión con variables de entorno, 
+              creé esquemas con Mongoose, definí validaciones en el modelo, y manejé operaciones CRUD desde el 
+              backend hacia la base de datos.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-film"></i>
+            </div>
+            <h3>Catálogo Visual de Películas</h3>
+            <p>
+              Grid de películas mostrando posters, efecto hover interactivo que revela información adicional, 
+              click en tarjeta que abre modal con detalles completos (título, año, director, duración, género, 
+              rating), diseño responsivo y atractivo.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-square-plus"></i>
+            </div>
+            <h3>Formulario con Validaciones</h3>
+            <p>
+              Formulario completo para agregar películas con campos: título, año, director, duración, género 
+              (selector), calificación y URL del poster. Validaciones tanto en cliente (JavaScript) como en 
+              servidor (Mongoose), feedback visual de éxito/error.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-arrows-left-right"></i>
+            </div>
+            <h3>Comunicación con Axios</h3>
+            <p>
+              Consumo de la API REST desde el frontend usando <strong>Axios</strong>. Aprendí a manejar peticiones 
+              HTTP asíncronas, procesar respuestas JSON, manejar errores de red, y actualizar la interfaz 
+              dinámicamente cuando se agregan películas.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="project-section">
+      <h2 class="section-title">Stack Tecnológico</h2>
+      <div class="section-content">
+        <div class="tech-stack-grid">
+          
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-desktop"></i> Frontend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript Vanilla</span>
+              <span class="tech-tag"><i class="fa-solid fa-cube"></i> Webpack</span>
+              <span class="tech-tag">Axios</span>
+              <span class="tech-tag">Live Server</span>
+            </div>
+            <p class="tech-description">
+              Frontend construido con JavaScript vanilla modularizado. Configuré Webpack desde cero para bundling, 
+              minificación y compilación. Usé Axios para consumo de API y organicé el código en módulos separados 
+              sin depender de frameworks - JavaScript puro y bien estructurado.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-brands fa-node-js"></i> Backend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">Mongoose</span>
+              <span class="tech-tag">CORS</span>
+              <span class="tech-tag">Dotenv</span>
+            </div>
+            <p class="tech-description">
+              API REST con Express siguiendo arquitectura modular profesional: config/ para configuraciones, 
+              controllers/ para lógica de negocio, middleware/ para funciones intermedias, models/ para esquemas 
+              Mongoose, y routes/ para endpoints. Variables de entorno con dotenv y CORS configurado.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-database"></i> Base de Datos</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-database"></i> MongoDB</span>
+              <span class="tech-tag">MongoDB Atlas</span>
+              <span class="tech-tag">Mongoose ODM</span>
+            </div>
+            <p class="tech-description">
+              Primera vez usando MongoDB en la nube con Atlas. Aprendí a construir connection strings dinámicos 
+              desde variables de entorno, definir esquemas con validaciones, manejar conexiones con pool de 
+              conexiones, y realizar operaciones CRUD en una base de datos NoSQL.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-tools"></i> Herramientas de Desarrollo</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
+              <span class="tech-tag">npm Scripts</span>
+              <span class="tech-tag">Webpack Config</span>
+              <span class="tech-tag">Environment Variables</span>
+            </div>
+            <p class="tech-description">
+              Configuré scripts de npm para desarrollo (npm run dev) y producción (npm run build), webpack.config.js 
+              para compilación y empaquetado, y variables de entorno para gestionar credenciales de MongoDB de 
+              forma segura sin exponerlas en el código.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL CHALLENGES -->
+    <section class="project-section">
+      <h2 class="section-title">Desafíos Técnicos y Aprendizajes</h2>
+      <div class="section-content">
+        
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Configurar Webpack por Primera Vez</h3>
+            <p>
+              Nunca había configurado un bundler. No entendía entry points, output paths, loaders o cómo 
+              Webpack convierte múltiples archivos JS en un solo bundle optimizado.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Leí la documentación de Webpack, experimenté con diferentes configuraciones en webpack.config.js, 
+              y entendí el flujo de compilación. Aprendí a configurar entry/output, usar loaders para CSS, y 
+              crear scripts separados para desarrollo y producción. Ahora comprendo por qué los bundlers son 
+              importantes en proyectos modernos.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Conectar Frontend con Backend</h3>
+            <p>
+              Era mi primera vez conectando un cliente con un servidor propio. No sabía cómo hacer que el 
+              frontend corriendo en localhost:8080 se comunicara con el backend en localhost:3000 sin errores 
+              de CORS.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Investigué sobre CORS y por qué los navegadores bloquean peticiones cross-origin. Configuré el 
+              middleware de CORS en Express, entendí la diferencia entre desarrollo y producción, y aprendí a 
+              usar Axios para hacer peticiones HTTP de forma limpia con promesas.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Manejar Variables de Entorno</h3>
+            <p>
+              No quería exponer las credenciales de MongoDB en el código, pero no sabía cómo usar variables de 
+              entorno ni cómo construir el connection string dinámicamente.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Implementé dotenv para cargar variables desde .env, agregué .env al .gitignore para seguridad, 
+              y construí el connection string de MongoDB dinámicamente usando template literals con 
+              process.env.DB_USER, DB_PASSWORD, etc. Entendí la importancia de no versionar credenciales.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Validaciones en Cliente y Servidor</h3>
+            <p>
+              Sabía que debía validar datos, pero no estaba claro dónde hacerlo: ¿solo en el cliente? ¿solo 
+              en el servidor? ¿En ambos lados?
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Implementé validaciones en ambos lados: JavaScript en el cliente para feedback inmediato al usuario, 
+              y validaciones en el esquema de Mongoose en el servidor como última línea de defensa. Aprendí que 
+              nunca se debe confiar solo en validaciones del cliente porque pueden ser bypasseadas.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY LEARNINGS -->
+    <section class="project-section">
+      <h2 class="section-title">Aprendizajes Clave</h2>
+      <div class="section-content">
+        
+        <div class="impact-grid">
+          
+          <div class="impact-card">
+            <div class="impact-icon learning">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Conceptos Fundamentales</h3>
+            <ul>
+              <li><strong>Arquitectura Cliente-Servidor:</strong> Separación clara entre frontend y backend, cada uno con su propia responsabilidad</li>
+              <li><strong>API REST:</strong> Cómo diseñar endpoints, métodos HTTP (GET, POST, PUT, DELETE), y estructura de respuestas</li>
+              <li><strong>Bases de Datos NoSQL:</strong> Diferencias con SQL, esquemas flexibles, y cuándo usar MongoDB</li>
+              <li><strong>Build Tools:</strong> Por qué existen bundlers como Webpack y cómo mejoran el desarrollo</li>
+              <li><strong>Seguridad Básica:</strong> No exponer credenciales, validar siempre en servidor, configurar CORS correctamente</li>
+            </ul>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon success">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3>Habilidades Técnicas Adquiridas</h3>
+            <ul>
+              <li>Configurar Webpack desde cero para proyectos JavaScript vanilla</li>
+              <li>Estructurar proyectos backend con arquitectura modular profesional</li>
+              <li>Conectar aplicaciones a MongoDB Atlas en la nube</li>
+              <li>Manejar variables de entorno de forma segura</li>
+              <li>Consumir APIs con Axios y manejar operaciones asíncronas</li>
+              <li>Implementar validaciones robustas en cliente y servidor</li>
+            </ul>
+          </div>
+
+          <div class="impact-card full-width">
+            <div class="impact-icon social">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Por Qué Este Proyecto Fue Importante</h3>
+            <p>
+              Este fue el momento en que todo "hizo click". Por primera vez vi cómo todas las piezas del stack 
+              se conectan: el usuario interactúa con HTML/CSS/JS en el navegador, el JavaScript hace peticiones 
+              HTTP a un servidor Express, el servidor consulta MongoDB, y la respuesta viaja de vuelta al cliente 
+              para actualizar la UI.
+            </p>
+            <p>
+              Aunque fue un proyecto académico, sentó las <strong>bases fundamentales</strong> que apliqué después 
+              en proyectos más complejos como el E-commerce con NestJS y Si, Voy. Aprendí que la arquitectura 
+              Full Stack no es complicada si entiendes bien cada capa y cómo se comunican entre sí.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IMPLEMENTATION DETAILS -->
+    <section class="project-section">
+      <h2 class="section-title">Detalles de Implementación</h2>
+      <div class="section-content">
+        
+        <div class="code-highlights">
+          
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-folder-tree"></i> Estructura del Proyecto</h3>
+            <ul class="tech-list">
+              <li><strong>front/:</strong> Cliente con HTML, CSS, JS y Webpack config</li>
+              <li><strong>front/src/:</strong> Código fuente JavaScript modularizado</li>
+              <li><strong>front/dist/:</strong> Bundle compilado por Webpack</li>
+              <li><strong>back/config/:</strong> Configuración de conexión a MongoDB</li>
+              <li><strong>back/controllers/:</strong> Lógica de negocio de cada endpoint</li>
+              <li><strong>back/middleware/:</strong> Funciones intermedias (validaciones, errores)</li>
+              <li><strong>back/models/:</strong> Esquemas de Mongoose para películas</li>
+              <li><strong>back/routes/:</strong> Definición de endpoints de la API</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-terminal"></i> Scripts Configurados</h3>
+            <ul class="tech-list">
+              <li><strong>Frontend - npm run dev:</strong> Compilación en modo desarrollo con Webpack</li>
+              <li><strong>Frontend - npm run build:</strong> Compilación optimizada para producción</li>
+              <li><strong>Frontend - npm start:</strong> Build + servidor con Live Server</li>
+              <li><strong>Backend - npm start:</strong> Inicia servidor Express en puerto configurado</li>
+              <li>Flujo: Backend debe estar corriendo antes de levantar el frontend</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-database"></i> Conexión a MongoDB</h3>
+            <ul class="tech-list">
+              <li>Connection string construido dinámicamente desde variables .env</li>
+              <li>Formato: mongodb+srv://user:password@host/dbname?options</li>
+              <li>Pool de conexiones configurado (maxPoolSize: 10)</li>
+              <li>Logs de conexión para debugging (connected/error/disconnected)</li>
+              <li>Manejo de errores de conexión con try/catch</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-code"></i> Características del Frontend</h3>
+            <ul class="tech-list">
+              <li>JavaScript modularizado sin frameworks (vanilla JS puro)</li>
+              <li>Webpack empaqueta múltiples archivos en un solo bundle</li>
+              <li>Axios para todas las peticiones HTTP a la API</li>
+              <li>Manipulación del DOM para renderizar películas dinámicamente</li>
+              <li>Event listeners para formulario, hover effects y modales</li>
+              <li>Validaciones de campos antes de enviar al servidor</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="project-cta">
+      <div class="cta-content">
+        <h2>¿Quieres Ver el Código?</h2>
+        <p>El código completo con toda la estructura está disponible en GitHub</p>
+        <div class="cta-buttons">
+          <a href="https://github.com/ErickNoguera/erick_film.git" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i>
+            Ver Repositorio
+          </a>
+          <a href="https://github.com/ErickNoguera/erick_film/blob/main/README.md" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-book"></i>
+            Leer Documentación
+          </a>
+          <a href="../index.html#portfolio" class="btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            Ver Más Proyectos
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2024 Erick Noguera | Full Stack Developer - AWS Cloud Practitioner</p>
+      <div class="footer-links">
+        <a href="https://github.com/ErickNoguera" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erickyosethnogueraolaizola" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:erick.noguera0410@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>
