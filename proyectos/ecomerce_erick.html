@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Proyecto E-commerce API - NestJS | Erick Noguera" />
+  <title>E-commerce API - NestJS | Erick Noguera</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/proyectos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+  <script src="https://kit.fontawesome.com/6f90d2228a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="project-detail-page">
+  
+  <!-- NAVIGATION -->
+  <nav class="project-nav">
+    <div class="container">
+      <a href="../index.html#portfolio" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Volver al Portafolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="project-category">E-Commerce Backend · Proyecto de Bootcamp</span>
+        <h1 class="project-title">E-commerce API</h1>
+        <p class="project-tagline">API REST completa para e-commerce construida con NestJS, TypeORM y PostgreSQL durante mi formación en Henry Bootcamp</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-calendar"></i>
+            <span>2024</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Full Stack Developer</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Proyecto Individual - Henry Bootcamp</span>
+          </div>
+        </div>
+
+        <div class="project-links-hero">
+          <a href="https://github.com/ErickNoguera/Ecomerce-ErickNoguera.git" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i>
+            Ver Código en GitHub
+          </a>
+          <a href="https://github.com/ErickNoguera/Ecomerce-ErickNoguera/blob/main/README.md" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-book"></i>
+            Ver Documentación
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2 class="section-title">Capturas del Proyecto</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item main-image">
+          <img src="../asets/ecomerce-Erick/Captura de pantalla 2025-10-27 112030.png" 
+               alt="E-commerce API - Vista Principal" 
+               class="gallery-img"
+               data-index="0">
+          <div class="image-caption">Documentación Swagger de la API</div>
+        </div>
+        
+        <!-- Agregar más imágenes cuando las tengas -->
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+  </div>
+
+  <div class="container">
+    
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+      <h2 class="section-title">Sobre el Proyecto</h2>
+      <div class="section-content">
+        <p class="lead-text">
+          Este proyecto fue el resultado de mi formación en el Bootcamp Full Stack de Henry, donde desarrollé de forma 
+          individual una API REST completa para un sistema de e-commerce utilizando tecnologías modernas del ecosistema Node.js.
+        </p>
+        
+        <p>
+          Aunque fue un proyecto académico guiado, cada estudiante lo construyó de manera independiente, tomando 
+          decisiones propias sobre la arquitectura, implementación de features y manejo de la lógica de negocio. 
+          El instructor nos mostraba un proyecto similar, pero cada uno debía implementar su propia solución.
+        </p>
+
+        <p>
+          El proyecto culminó con una defensa técnica ante un profesional externo, donde debí explicar todas las 
+          decisiones de arquitectura, responder preguntas técnicas profundas sobre la implementación, y realizar 
+          modificaciones en vivo del código (en mi caso, modificar un endpoint bajo presión).
+        </p>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Contexto del Proyecto</h3>
+          <p>
+            <strong>Bootcamp:</strong> Henry Full Stack Development<br>
+            <strong>Modalidad:</strong> Proyecto individual con guía del instructor<br>
+            <strong>Evaluación:</strong> Defensa técnica ante profesional externo<br>
+            <strong>Objetivo:</strong> Demostrar dominio de backend moderno con NestJS, TypeORM y PostgreSQL
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I BUILT -->
+    <section class="project-section">
+      <h2 class="section-title">¿Qué Construí?</h2>
+      <div class="section-content">
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-alt"></i>
+            </div>
+            <h3>Sistema de Autenticación</h3>
+            <p>
+              Implementé autenticación completa con JWT, incluyendo registro de usuarios, login, hash de contraseñas 
+              con bcrypt, y un sistema de roles (usuario regular vs administrador) con guards personalizados para 
+              proteger endpoints específicos.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-boxes"></i>
+            </div>
+            <h3>Gestión de Productos</h3>
+            <p>
+              CRUD completo de productos con paginación, relaciones entre productos y categorías usando TypeORM, 
+              sistema de carga masiva desde JSON (seeder), y subida de imágenes a Cloudinary para no depender 
+              del almacenamiento local.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shopping-cart"></i>
+            </div>
+            <h3>Sistema de Órdenes</h3>
+            <p>
+              Creación y gestión de órdenes de compra con relaciones complejas entre usuarios, órdenes, detalles 
+              de órdenes y productos. Implementé la lógica para calcular totales, gestionar stock y mantener 
+              la integridad de los datos.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Documentación Swagger</h3>
+            <p>
+              Configuré Swagger/OpenAPI para generar documentación interactiva automática de toda la API, 
+              incluyendo ejemplos de requests, responses esperadas, códigos de estado, y requisitos de autenticación 
+              para cada endpoint.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="project-section">
+      <h2 class="section-title">Stack Tecnológico Utilizado</h2>
+      <div class="section-content">
+        <div class="tech-stack-grid">
+          
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-server"></i> Framework Backend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-node-js"></i> NestJS 10.0</span>
+              <span class="tech-tag"><i class="fa-brands fa-js"></i> TypeScript 5.1</span>
+              <span class="tech-tag">Arquitectura Modular</span>
+              <span class="tech-tag">Decoradores</span>
+            </div>
+            <p class="tech-description">
+              Utilicé NestJS por su arquitectura modular inspirada en Angular, que facilita la separación de 
+              responsabilidades y el testing. TypeScript me permitió tener tipado estático y detectar errores 
+              en tiempo de desarrollo.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-database"></i> Base de Datos</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-tag">TypeORM 0.3</span>
+              <span class="tech-tag">Migraciones</span>
+              <span class="tech-tag">Relaciones</span>
+            </div>
+            <p class="tech-description">
+              Diseñé el esquema de base de datos con relaciones 1:N y N:N entre entidades. TypeORM me permitió 
+              manejar estas relaciones de forma elegante y type-safe, además de gestionar migraciones de forma 
+              controlada.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-lock"></i> Seguridad y Validación</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-key"></i> JWT</span>
+              <span class="tech-tag">bcrypt</span>
+              <span class="tech-tag">class-validator</span>
+              <span class="tech-tag">Guards Personalizados</span>
+            </div>
+            <p class="tech-description">
+              Implementé validaciones robustas con class-validator, creé guards personalizados para autenticación 
+              y autorización por roles, y aseguré las contraseñas con bcrypt. También validé formatos de email, 
+              longitudes de campos y coincidencia de contraseñas.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-tools"></i> Herramientas Adicionales</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Swagger/OpenAPI</span>
+              <span class="tech-tag">Cloudinary</span>
+              <span class="tech-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="tech-tag">Jest (Testing)</span>
+            </div>
+            <p class="tech-description">
+              Documenté la API con Swagger, integré Cloudinary para gestión de imágenes, dockericé el proyecto 
+              para portabilidad, y escribí tests unitarios con Jest para asegurar la calidad del código.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL CHALLENGES -->
+    <section class="project-section">
+      <h2 class="section-title">Desafíos Técnicos y Soluciones</h2>
+      <div class="section-content">
+        
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Relaciones Complejas en TypeORM</h3>
+            <p>
+              Al principio me costó entender cómo manejar correctamente las relaciones N:N entre productos y 
+              detalles de órdenes, y cómo hacer que TypeORM manejara automáticamente las tablas intermedias.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Estudié la documentación de TypeORM a fondo y experimenté con @ManyToMany, @JoinTable y opciones 
+              de eager loading. Aprendí a usar eager: true solo donde era necesario para evitar queries innecesarias, 
+              y cómo estructurar correctamente las entidades para que las relaciones fueran bidireccionales.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Validación de Contraseñas</h3>
+            <p>
+              Necesitaba validar que la contraseña cumpliera requisitos de seguridad (mayúsculas, minúsculas, números, 
+              símbolos) y además que coincidiera con el campo de confirmación.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Creé mi primer decorador personalizado @MatchPassword que compara dos campos del DTO. También implementé 
+              validaciones con regex para asegurar contraseñas fuertes. Fue mi primera vez creando decoradores propios 
+              y entendí el poder de los decoradores de NestJS.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Guards de Autorización</h3>
+            <p>
+              Necesitaba proteger ciertos endpoints para que solo los administradores pudieran acceder (como actualizar 
+              productos), pero sin duplicar código de validación en cada controlador.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Implementé un RolesGuard reutilizable que lee metadata de los decoradores @Roles() y valida si el usuario 
+              tiene el rol necesario. Combiné este guard con el AuthGuard de Passport para tener autenticación + autorización 
+              en un solo lugar limpio y mantenible.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Carga Masiva de Productos</h3>
+            <p>
+              Necesitaba poblar la base de datos con productos de prueba desde un archivo JSON sin crear duplicados 
+              cada vez que ejecutara el seeder.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Lo que Aprendí</h3>
+            <p>
+              Investigué sobre operaciones upsert (insert or update) en PostgreSQL y las implementé a través de TypeORM. 
+              Creé un endpoint /products/seeder que verifica si el producto ya existe antes de insertarlo, evitando 
+              duplicados y permitiendo re-ejecutar el seeder múltiples veces de forma segura.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEARNING & DEFENSE -->
+    <section class="project-section">
+      <h2 class="section-title">Aprendizajes y Defensa Técnica</h2>
+      <div class="section-content">
+        
+        <div class="impact-grid">
+          
+          <div class="impact-card">
+            <div class="impact-icon learning">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Lo que Aprendí Construyendo Esto</h3>
+            <ul>
+              <li><strong>Arquitectura Modular:</strong> Separación clara de responsabilidades en módulos, servicios, controladores y repositorios</li>
+              <li><strong>ORMs en Producción:</strong> Cómo usar TypeORM para relaciones complejas, migraciones y consultas eficientes</li>
+              <li><strong>Seguridad Backend:</strong> Implementación real de JWT, bcrypt, guards y validaciones robustas</li>
+              <li><strong>Decoradores Personalizados:</strong> Crear mis propios decoradores para validaciones específicas</li>
+              <li><strong>Documentación Automática:</strong> Configurar Swagger para documentar APIs de forma profesional</li>
+              <li><strong>Dockerización:</strong> Containerizar aplicaciones para portabilidad y despliegues consistentes</li>
+            </ul>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon success">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+            <h3>La Defensa Técnica</h3>
+            <ul>
+              <li><strong>Presentación:</strong> Expliqué toda la arquitectura del proyecto, decisiones de diseño y tecnologías elegidas</li>
+              <li><strong>Preguntas Técnicas:</strong> Respondí preguntas profundas sobre TypeORM, relaciones, guards, y flujo de autenticación</li>
+              <li><strong>Coding en Vivo:</strong> Modifiqué un endpoint en tiempo real mientras explicaba mis cambios</li>
+              <li><strong>Bajo Presión:</strong> Mantuve la calma y demostré comprensión real del código, no solo memorización</li>
+              <li><strong>Resultado:</strong> Aprobé la defensa exitosamente, validando mi comprensión del stack completo</li>
+            </ul>
+          </div>
+
+          <div class="impact-card full-width">
+            <div class="impact-icon social">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Por Qué Este Proyecto Es Importante para Mí</h3>
+            <p>
+              Aunque fue un proyecto académico, representa un punto de inflexión en mi formación. Por primera vez 
+              construí una API completa con arquitectura profesional, no solo scripts sueltos. Aprendí a pensar 
+              en <strong>escalabilidad, seguridad y mantenibilidad</strong> desde el inicio.
+            </p>
+            <p>
+              La defensa técnica me enseñó algo crucial: <strong>no basta con hacer que el código funcione; hay que 
+              entenderlo profundamente</strong> para poder explicarlo y modificarlo bajo presión. Esa experiencia me 
+              preparó para entrevistas técnicas y proyectos reales donde necesito justificar decisiones de arquitectura.
+            </p>
+            <p>
+              Este proyecto sentó las bases para trabajar después en proyectos reales como Si, Voy y Auto-volt, 
+              donde apliqué estos mismos principios de arquitectura modular, seguridad y buenas prácticas.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL IMPLEMENTATION -->
+    <section class="project-section">
+      <h2 class="section-title">Implementación Técnica Destacada</h2>
+      <div class="section-content">
+        
+        <div class="code-highlights">
+          
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-layer-group"></i> Arquitectura de Módulos</h3>
+            <p>Estructura modular de NestJS implementada:</p>
+            <ul class="tech-list">
+              <li><strong>auth/</strong> - Autenticación JWT, guards y estrategias de Passport</li>
+              <li><strong>users/</strong> - Gestión de usuarios, roles y perfiles</li>
+              <li><strong>products/</strong> - CRUD de productos, categorías y stock</li>
+              <li><strong>orders/</strong> - Sistema de órdenes y detalles de compra</li>
+              <li><strong>file-upload/</strong> - Integración con Cloudinary para imágenes</li>
+              <li><strong>config/</strong> - Configuración centralizada de TypeORM y variables de entorno</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-database"></i> Modelo de Datos Implementado</h3>
+            <ul class="tech-list">
+              <li><strong>Users:</strong> Entidad con validaciones, hash de contraseñas y relación con órdenes</li>
+              <li><strong>Products:</strong> Catálogo con stock, precios, imágenes y relación con categorías</li>
+              <li><strong>Categories:</strong> Clasificación de productos con relación 1:N</li>
+              <li><strong>Orders:</strong> Órdenes de compra vinculadas a usuarios</li>
+              <li><strong>OrderDetails:</strong> Tabla intermedia con productos y precios de cada orden</li>
+              <li>Relaciones N:N entre Products y OrderDetails manejadas automáticamente por TypeORM</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-shield-alt"></i> Sistema de Seguridad</h3>
+            <ul class="tech-list">
+              <li>Contraseñas hasheadas con bcrypt (salt rounds configurables)</li>
+              <li>JWT con payload personalizado (id, email, isAdmin) y expiración de 1 hora</li>
+              <li>Guards personalizados: AuthGuard para autenticación, RolesGuard para autorización</li>
+              <li>Decorador @Roles() para proteger endpoints específicos</li>
+              <li>Validaciones con class-validator: emails únicos, contraseñas fuertes, campos requeridos</li>
+              <li>Decorador personalizado @MatchPassword para confirmar contraseñas</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-code"></i> Features Implementadas</h3>
+            <ul class="tech-list">
+              <li>Paginación en endpoints de listado (GET /products?page=1&limit=5)</li>
+              <li>Seeder de productos desde archivo JSON con upsert para evitar duplicados</li>
+              <li>Subida de imágenes a Cloudinary con URLs persistentes</li>
+              <li>Middleware de logging global para tracking de requests</li>
+              <li>Documentación automática con Swagger/OpenAPI en /api</li>
+              <li>Variables de entorno con validación de configuración</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="project-cta">
+      <div class="cta-content">
+        <h2>¿Quieres Ver el Código?</h2>
+        <p>El código completo está disponible en GitHub con documentación detallada</p>
+        <div class="cta-buttons">
+          <a href="https://github.com/ErickNoguera/Ecomerce-ErickNoguera.git" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i>
+            Ver Repositorio
+          </a>
+          <a href="https://github.com/ErickNoguera/Ecomerce-ErickNoguera/blob/main/README.md" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-book"></i>
+            Leer Documentación
+          </a>
+          <a href="../index.html#portfolio" class="btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            Ver Más Proyectos
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2024 Erick Noguera | Full Stack Developer - AWS Cloud Practitioner</p>
+      <div class="footer-links">
+        <a href="https://github.com/ErickNoguera" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erickyosethnogueraolaizola" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:erick.noguera0410@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

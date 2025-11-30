@@ -654,3 +654,51 @@ body {
         font-size: 0.7rem;
     }
 }
+
+/* ==========================================
+   IMAGE OVERLAY FOR PROJECT CARDS
+   ========================================== */
+
+.proyect_image_link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.proyect_image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 31, 93, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.proyect_card:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay i {
+    font-size: 3rem;
+    color: white;
+}
+
+.image-overlay span {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

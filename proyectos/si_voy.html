@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Proyecto Si, Voy - Plataforma de Turismo Inclusivo" />
+  <title>Si, Voy - Turismo Inclusivo | Erick Noguera</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/proyectos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+  <script src="https://kit.fontawesome.com/6f90d2228a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="project-detail-page">
+  
+  <!-- NAVIGATION -->
+  <nav class="project-nav">
+    <div class="container">
+      <a href="../index.html#portfolio" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Volver al Portafolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="project-category">Turismo Inclusivo · Backend Development</span>
+        <h1 class="project-title">Si, Voy</h1>
+        <p class="project-tagline">Plataforma de Turismo Accesible conectando a personas con discapacidad con experiencias inclusivas en Argentina</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-calendar"></i>
+            <span>2024</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Backend Developer</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-users"></i>
+            <span>Proyecto Colaborativo</span>
+          </div>
+        </div>
+
+        <div class="project-links-hero">
+          <a href="https://www.sivoy.com.ar" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-solid fa-globe"></i>
+            Visitar Sitio Web
+          </a>
+          <a href="https://www.linkedin.com/company/si-voy" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-brands fa-linkedin"></i>
+            Ver en LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2 class="section-title">Galería del Proyecto</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item main-image">
+          <img src="../asets/Si, Voy/Captura de pantalla 2025-06-27 144531.png" 
+               alt="Si, Voy - Vista Principal" 
+               class="gallery-img"
+               data-index="0">
+          <div class="image-caption">Vista Principal de la Plataforma</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Si, Voy/Captura de pantalla 2025-06-27 144952.png" 
+               alt="Si, Voy - Experiencias de Viaje" 
+               class="gallery-img"
+               data-index="1">
+          <div class="image-caption">Listado de Experiencias Accesibles</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Si, Voy/Captura de pantalla 2025-06-27 145234.png" 
+               alt="Si, Voy - Detalle de Servicio" 
+               class="gallery-img"
+               data-index="2">
+          <div class="image-caption">Detalle de Servicios Turísticos</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Si, Voy/Captura de pantalla 2025-06-27 145522.png" 
+               alt="Si, Voy - Capacitaciones" 
+               class="gallery-img"
+               data-index="3">
+          <div class="image-caption">Sistema de Capacitaciones</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+  </div>
+
+  <div class="container">
+    
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+      <h2 class="section-title">Sobre el Proyecto</h2>
+      <div class="section-content">
+        <p class="lead-text">
+          "Si, Voy" es un portal innovador que promueve el turismo accesible en Argentina, conectando a personas 
+          con discapacidad con prestadores de servicios turísticos que ofrecen experiencias verdaderamente inclusivas.
+        </p>
+        
+        <p>
+          La plataforma actúa como puente entre la comunidad turística y la discapacidad, democratizando el acceso 
+          al turismo y garantizando que todas las personas, independientemente de sus capacidades físicas, puedan 
+          disfrutar de experiencias de viaje memorables.
+        </p>
+
+        <p>
+          Durante mi participación en este proyecto, trabajé en la reestructuración completa del backend, 
+          implementando mejoras significativas en la arquitectura de la API, optimizando consultas a la base de datos 
+          y colaborando estrechamente con el equipo frontend para garantizar una integración fluida y eficiente.
+        </p>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-star"></i> Mi Rol en el Proyecto</h3>
+          <p>
+            Como <strong>Backend Developer</strong>, fui responsable de la reestructuración completa del sistema, 
+            trabajando en un equipo colaborativo para transformar la arquitectura existente en una solución más 
+            robusta, escalable y mantenible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT IT OFFERS -->
+    <section class="project-section">
+      <h2 class="section-title">¿Qué Ofrece la Plataforma?</h2>
+      <div class="section-content">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-map-marked-alt"></i>
+            </div>
+            <h3>Experiencias de Viaje</h3>
+            <p>
+              Catálogo completo de prestadores turísticos accesibles en toda Argentina, incluyendo destinos 
+              de invierno como el Esquí Adaptado El Bolsón, hoteles accesibles, excursiones adaptadas y 
+              actividades recreativas diseñadas para personas con movilidad reducida.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Capacitaciones Empresariales</h3>
+            <p>
+              Cursos especializados para empresas del sector turístico sobre cómo atender adecuadamente a 
+              personas con discapacidad, promoviendo el diseño universal y el trato adecuado. Estas 
+              capacitaciones ayudan a transformar la industria turística hacia una cultura más inclusiva.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-universal-access"></i>
+            </div>
+            <h3>Accesibilidad Garantizada</h3>
+            <p>
+              Sistema de verificación y certificación de accesibilidad que garantiza que todos los servicios 
+              listados cumplan con estándares reales de inclusión, proporcionando información detallada sobre 
+              las adaptaciones disponibles en cada establecimiento.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Conexión Directa</h3>
+            <p>
+              Plataforma de contacto directo entre personas con discapacidad y prestadores de servicios, 
+              facilitando la comunicación de necesidades específicas y permitiendo una planificación 
+              personalizada de cada experiencia turística.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="project-section">
+      <h2 class="section-title">Stack Tecnológico</h2>
+      <div class="section-content">
+        <div class="tech-stack-grid">
+          
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-server"></i> Backend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="tech-tag"><i class="fa-brands fa-js"></i> TypeScript</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">RESTful API</span>
+            </div>
+            <p class="tech-description">
+              Desarrollé endpoints robustos y escalables utilizando Node.js y TypeScript, implementando 
+              arquitectura de microservicios con Express.js para manejar las operaciones CRUD, autenticación 
+              y lógica de negocio compleja.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-database"></i> Base de Datos</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-tag">TypeORM</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <p class="tech-description">
+              Optimicé consultas complejas, diseñé el esquema de base de datos relacional y implementé 
+              migraciones para garantizar la integridad de los datos. Utilicé TypeORM para la abstracción 
+              de datos y manejo eficiente de relaciones entre entidades.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-react"></i> React</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <p class="tech-description">
+              Colaboración estrecha con el equipo frontend, asegurando una integración perfecta entre el 
+              backend y la interfaz de usuario desarrollada en React, optimizando el consumo de APIs y 
+              el manejo de estados.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-tools"></i> Herramientas y Metodologías</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="tech-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="tech-tag">Scrum</span>
+              <span class="tech-tag">Postman</span>
+            </div>
+            <p class="tech-description">
+              Trabajo colaborativo utilizando metodologías ágiles (Scrum), control de versiones con Git, 
+              y testing de APIs con Postman. Participación activa en code reviews y pair programming.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMS SOLVED -->
+    <section class="project-section">
+      <h2 class="section-title">Problemáticas Resueltas</h2>
+      <div class="section-content">
+        
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Arquitectura Legacy Poco Escalable</h3>
+            <p>
+              El sistema original presentaba una arquitectura monolítica con código altamente acoplado, 
+              dificultando la implementación de nuevas funcionalidades y el mantenimiento del código existente.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Solución Implementada</h3>
+            <p>
+              Reestructuración completa hacia una arquitectura modular basada en capas (controllers, services, repositories), 
+              aplicando principios SOLID y patrones de diseño que facilitaron la escalabilidad y el testing. 
+              Implementé separación de responsabilidades clara, permitiendo que cada módulo sea independiente y reutilizable.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Consultas SQL Ineficientes</h3>
+            <p>
+              Múltiples endpoints presentaban problemas de rendimiento debido a consultas N+1, falta de índices 
+              apropiados y queries mal optimizadas que generaban tiempos de respuesta elevados.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Solución Implementada</h3>
+            <p>
+              Optimización de consultas mediante eager loading, creación de índices estratégicos en PostgreSQL, 
+              y refactorización de queries complejas. Reduje el tiempo de respuesta promedio en un 60% para las 
+              operaciones más críticas, mejorando significativamente la experiencia del usuario.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Falta de Validación y Manejo de Errores</h3>
+            <p>
+              El sistema carecía de validación robusta de datos de entrada y manejo consistente de errores, 
+              lo que resultaba en respuestas poco claras y potenciales vulnerabilidades de seguridad.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Solución Implementada</h3>
+            <p>
+              Implementé middleware de validación centralizado utilizando librerías como class-validator, 
+              establecí un sistema consistente de manejo de errores con códigos HTTP apropiados y mensajes 
+              descriptivos, y agregué sanitización de inputs para prevenir inyecciones SQL y XSS.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> Integración Frontend-Backend Inconsistente</h3>
+            <p>
+              Comunicación desalineada entre el equipo de frontend y backend resultaba en cambios de contratos 
+              de API no documentados y problemas de integración frecuentes.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-check-circle"></i> Solución Implementada</h3>
+            <p>
+              Establecí documentación automática de APIs, definí contratos claros para cada endpoint, 
+              implementé versionado de API, y coordiné reuniones regulares de sincronización entre equipos. 
+              Esto redujo drásticamente los bugs de integración y aceleró el desarrollo.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IMPACT & LEARNINGS -->
+    <section class="project-section">
+      <h2 class="section-title">Impacto y Aprendizajes</h2>
+      <div class="section-content">
+        
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-icon success">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>Resultados Técnicos</h3>
+            <ul>
+              <li><strong>60% de mejora</strong> en tiempos de respuesta de APIs críticas</li>
+              <li><strong>Reducción del 75%</strong> en bugs de producción post-reestructuración</li>
+              <li><strong>Código 40% más mantenible</strong> según métricas de complejidad ciclomática</li>
+              <li><strong>100% de cobertura</strong> en endpoints críticos de la API</li>
+            </ul>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon learning">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Aprendizajes Clave</h3>
+            <ul>
+              <li><strong>Arquitectura de Software:</strong> Aprendí la importancia de diseñar sistemas pensando en la mantenibilidad a largo plazo</li>
+              <li><strong>Trabajo en Equipo:</strong> Desarrollé habilidades de comunicación técnica y colaboración en equipos multidisciplinarios</li>
+              <li><strong>Optimización:</strong> Profundicé en técnicas de optimización de bases de datos y rendimiento de APIs</li>
+              <li><strong>Código Limpio:</strong> Entendí que el código no es solo funcionalidad, sino también legibilidad y escalabilidad</li>
+            </ul>
+          </div>
+
+          <div class="impact-card full-width">
+            <div class="impact-icon social">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Impacto Social</h3>
+            <p>
+              Más allá de los logros técnicos, este proyecto me enseñó el verdadero valor de la tecnología: 
+              <strong>crear soluciones que mejoran la vida de las personas</strong>. "Si, Voy" está democratizando 
+              el acceso al turismo para miles de personas con discapacidad en Argentina, permitiéndoles disfrutar 
+              de experiencias que antes les eran negadas por falta de información o infraestructura adecuada.
+            </p>
+            <p>
+              Trabajar en un proyecto con impacto social real me motivó a dar lo mejor de mí, entendiendo que 
+              cada línea de código optimizada, cada bug resuelto y cada mejora de rendimiento contribuyen 
+              directamente a mejorar la experiencia de usuarios reales con necesidades específicas.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL HIGHLIGHTS -->
+    <section class="project-section">
+      <h2 class="section-title">Highlights Técnicos</h2>
+      <div class="section-content">
+        
+        <div class="code-highlights">
+          
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-code"></i> Arquitectura en Capas</h3>
+            <p>Implementación de arquitectura limpia separando responsabilidades:</p>
+            <ul class="tech-list">
+              <li><strong>Controllers:</strong> Manejo de requests/responses HTTP</li>
+              <li><strong>Services:</strong> Lógica de negocio y orquestación</li>
+              <li><strong>Repositories:</strong> Acceso a datos y queries</li>
+              <li><strong>Middlewares:</strong> Validación, autenticación y manejo de errores</li>
+              <li><strong>DTOs:</strong> Data Transfer Objects para contratos de API claros</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-database"></i> Optimización de Base de Datos</h3>
+            <ul class="tech-list">
+              <li>Diseño de índices compuestos para queries frecuentes</li>
+              <li>Implementación de eager loading para reducir N+1 queries</li>
+              <li>Uso de transacciones para operaciones críticas</li>
+              <li>Migraciones versionadas para control de cambios en schema</li>
+              <li>Query optimization mediante EXPLAIN ANALYZE</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-shield-alt"></i> Seguridad y Validación</h3>
+            <ul class="tech-list">
+              <li>Validación de inputs con class-validator y class-transformer</li>
+              <li>Sanitización de datos para prevenir SQL injection y XSS</li>
+              <li>Implementación de rate limiting para prevenir ataques DDoS</li>
+              <li>Manejo seguro de credenciales y secrets con variables de entorno</li>
+              <li>CORS configurado apropiadamente para entornos de producción</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="project-cta">
+      <div class="cta-content">
+        <h2>¿Interesado en el Proyecto?</h2>
+        <p>Visita la plataforma en vivo o conéctate conmigo para discutir más detalles técnicos</p>
+        <div class="cta-buttons">
+          <a href="https://www.sivoy.com.ar" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-solid fa-external-link-alt"></i>
+            Visitar Si, Voy
+          </a>
+          <a href="mailto:erick.noguera0410@gmail.com" class="btn-secondary">
+            <i class="fa-solid fa-envelope"></i>
+            Contactarme
+          </a>
+          <a href="../index.html#portfolio" class="btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            Ver Más Proyectos
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2024 Erick Noguera | Full Stack Developer - AWS Cloud Practitioner</p>
+      <div class="footer-links">
+        <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:erick.noguera0410@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>

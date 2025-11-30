@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Proyecto AboutMe DevOps | Erick Noguera" />
+  <title>AboutMe DevOps | Erick Noguera</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/proyectos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+  <script src="https://kit.fontawesome.com/6f90d2228a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="project-detail-page">
+  
+  <!-- NAVIGATION -->
+  <nav class="project-nav">
+    <div class="container">
+      <a href="../index.html#portfolio" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Volver al Portafolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="project-category">DevOps · Aprendizaje Acelerado · Entrevista Técnica</span>
+        <h1 class="project-title">AboutMe DevOps</h1>
+        <p class="project-tagline">De una simple landing page a un proyecto DevOps completo en 1 semana: Docker, Kubernetes, Prometheus y Grafana</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-calendar"></i>
+            <span>2024</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>1 Semana</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-microphone"></i>
+            <span>Presentación ante Líderes Técnicos</span>
+          </div>
+        </div>
+
+        <div class="project-links-hero">
+          <a href="https://github.com/ErickNoguera/aboutme-devops.git" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i>
+            Ver Código en GitHub
+          </a>
+          <a href="https://github.com/ErickNoguera/aboutme-devops/blob/main/README.md" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-book"></i>
+            Ver Documentación
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2 class="section-title">El Proyecto</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item main-image">
+          <img src="../asets/Sobre Mi/Captura de pantalla 2025-06-27 143525.png" 
+               alt="AboutMe - Aplicación Original" 
+               class="gallery-img"
+               data-index="0">
+          <div class="image-caption">Aplicación Original - HTML/CSS/JS Simple</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Sobre Mi/Captura de pantalla 2025-06-27 143654.png" 
+               alt="AboutMe - Formulario Interactivo" 
+               class="gallery-img"
+               data-index="1">
+          <div class="image-caption">Funcionalidad de Tarjetas Dinámicas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+  </div>
+
+  <div class="container">
+    
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+      <h2 class="section-title">El Desafío</h2>
+      <div class="section-content">
+        <p class="lead-text">
+          Durante un proceso de entrevista para una posición DevOps, me asignaron un proyecto técnico con un plazo 
+          de <strong>1 semana</strong>: transformar una aplicación existente en un proyecto DevOps completo 
+          utilizando Docker, Kubernetes, Prometheus y Grafana.
+        </p>
+        
+        <p>
+          Tomé una landing page personal simple que ya tenía (HTML, CSS, JavaScript puro) y la transformé 
+          completamente, agregando containerización, orquestación, monitoreo y simulación de fallos. El resultado 
+          fue un proyecto que debía presentar y defender técnicamente ante dos líderes técnicos del equipo.
+        </p>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-rocket"></i> El Reto Real</h3>
+          <p>
+            <strong>Tiempo:</strong> 7 días para aprender e implementar<br>
+            <strong>Conocimiento previo:</strong> AWS Cloud Practitioner, backend/frontend básico<br>
+            <strong>Stack nuevo:</strong> Docker, Kubernetes, Helm, Prometheus, Grafana<br>
+            <strong>Presentación:</strong> Demo en vivo ante 2 líderes técnicos<br>
+            <strong>Método:</strong> Documentación oficial + IA como asistente de aprendizaje
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE TRANSFORMATION -->
+    <section class="project-section">
+      <h2 class="section-title">La Transformación</h2>
+      <div class="section-content">
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Aplicación Original</h3>
+            <p>
+              <strong>Landing page simple</strong> con HTML5, CSS3 y JavaScript vanilla. Tenía un formulario que 
+              generaba tarjetas dinámicas con información del usuario. Sin servidor, sin backend, solo archivos 
+              estáticos servidos directamente.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <h3>Servidor Express</h3>
+            <p>
+              Creé un servidor con <strong>Node.js + Express</strong> para servir la aplicación y agregar endpoints 
+              de health checks, simulación de fallos (/demo/fail) y generación de carga CPU (/demo/stress) para 
+              demostrar observabilidad.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-docker"></i>
+            </div>
+            <h3>Containerización</h3>
+            <p>
+              Dockericé la aplicación creando un <strong>Dockerfile multi-stage</strong> optimizado, imagen basada 
+              en Node Alpine para mantenerla ligera, y configuré variables de entorno para diferentes ambientes.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-dharmachakra"></i>
+            </div>
+            <h3>Orquestación Kubernetes</h3>
+            <p>
+              Implementé <strong>Kubernetes con minikube</strong> localmente, creé deployments, services, health 
+              probes (readiness/liveness), resource limits, y configuré auto-recovery para demostrar resiliencia.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Monitoreo con Prometheus</h3>
+            <p>
+              Instalé <strong>Prometheus</strong> vía Helm, configuré ServiceMonitors para scraping de métricas, 
+              y agregué métricas personalizadas de la aplicación (requests, errores, latencia, uso de CPU/memoria).
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-chart-area"></i>
+            </div>
+            <h3>Visualización con Grafana</h3>
+            <p>
+              Configuré <strong>Grafana</strong> con dashboards para visualizar métricas en tiempo real, alertas 
+              cuando los pods se reinician, y gráficos de uso de recursos para demostrar el comportamiento bajo 
+              carga.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="project-section">
+      <h2 class="section-title">Stack Tecnológico</h2>
+      <div class="section-content">
+        <div class="tech-stack-grid">
+          
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-code"></i> Aplicación Base</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="tech-tag">Express.js</span>
+            </div>
+            <p class="tech-description">
+              Transformé una SPA estática en una aplicación servida por Express con endpoints de monitoreo, 
+              health checks y simulación de fallos.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-brands fa-docker"></i> Containerización</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Alpine Linux</span>
+            </div>
+            <p class="tech-description">
+              Aprendí a crear Dockerfiles optimizados, gestionar imágenes, y entender el ciclo de vida de 
+              contenedores desde build hasta deployment.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-dharmachakra"></i> Orquestación</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">minikube</span>
+              <span class="tech-tag">Helm Charts</span>
+              <span class="tech-tag">kubectl</span>
+            </div>
+            <p class="tech-description">
+              Implementé deployments, services, configmaps, health probes y entendí conceptos como pods, 
+              replicas, auto-scaling y self-healing.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-chart-line"></i> Observabilidad</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Prometheus</span>
+              <span class="tech-tag">Grafana</span>
+              <span class="tech-tag">Metrics API</span>
+              <span class="tech-tag">Alertmanager</span>
+            </div>
+            <p class="tech-description">
+              Configuré stack completo de monitoreo: scraping de métricas, almacenamiento de series temporales, 
+              visualización en dashboards y alertas básicas.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING PROCESS -->
+    <section class="project-section">
+      <h2 class="section-title">Proceso de Aprendizaje</h2>
+      <div class="section-content">
+        
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-question-circle"></i> El Desafío de Aprender Rápido</h3>
+            <p>
+              Tenía conocimientos básicos de cloud (AWS Cloud Practitioner) y desarrollo backend, pero 
+              <strong>nunca había trabajado con Kubernetes, Prometheus o Grafana</strong>. Tenía 7 días para 
+              aprender, implementar y estar listo para defender el proyecto técnicamente.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-lightbulb"></i> Mi Estrategia</h3>
+            <p>
+              Combiné <strong>documentación oficial</strong> (Kubernetes docs, Prometheus guides) con 
+              <strong>IA como asistente de aprendizaje</strong> para entender conceptos, debuggear errores y 
+              optimizar configuraciones. No copié código ciegamente - usé IA para explicarme conceptos que no 
+              entendía y validar mis implementaciones.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Lo que Aprendí en 1 Semana</h3>
+          <ul class="tech-list">
+            <li><strong>Docker:</strong> Cómo containerizar aplicaciones, crear Dockerfiles optimizados, gestionar imágenes y volúmenes</li>
+            <li><strong>Kubernetes:</strong> Conceptos de pods, deployments, services, health probes, resource limits, auto-recovery</li>
+            <li><strong>Helm:</strong> Package manager para Kubernetes, creación de charts parametrizables y reutilizables</li>
+            <li><strong>Prometheus:</strong> Arquitectura de monitoreo, scraping de métricas, PromQL básico, configuración de targets</li>
+            <li><strong>Grafana:</strong> Creación de dashboards, paneles, queries, alertas y visualización de datos de Prometheus</li>
+            <li><strong>DevOps mindset:</strong> Observabilidad, resiliencia, automatización, infrastructure as code</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THE PRESENTATION -->
+    <section class="project-section">
+      <h2 class="section-title">La Presentación Técnica</h2>
+      <div class="section-content">
+        
+        <div class="impact-grid">
+          
+          <div class="impact-card">
+            <div class="impact-icon success">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+            <h3>Demo en Vivo</h3>
+            <ul>
+              <li><strong>Explicación de arquitectura:</strong> Describí toda la transformación de app estática a DevOps stack</li>
+              <li><strong>Demo de containerización:</strong> Mostré el Dockerfile, build de imagen y ejecución del contenedor</li>
+              <li><strong>Deploy en Kubernetes:</strong> Desplegué la app con Helm, mostré pods corriendo con kubectl</li>
+              <li><strong>Simulación de fallos:</strong> Ejecuté /demo/fail, mostré cómo K8s reinicia el pod automáticamente</li>
+              <li><strong>Monitoreo en vivo:</strong> Mostré dashboards de Grafana con métricas en tiempo real</li>
+            </ul>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon learning">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3>Preguntas de los Líderes Técnicos</h3>
+            <ul>
+              <li><strong>"¿Por qué Kubernetes para una app tan simple?"</strong> - Expliqué que el objetivo era demostrar comprensión del stack DevOps</li>
+              <li><strong>"¿Cómo funciona el auto-recovery?"</strong> - Describí health probes, restart policies y self-healing</li>
+              <li><strong>"¿Qué métricas estás monitoreando?"</strong> - Expliqué CPU, memoria, requests, errores HTTP, latencia</li>
+              <li><strong>"¿Usaste IA para esto?"</strong> - Fui honesto: sí, como herramienta de aprendizaje, no como copilot ciego</li>
+              <li><strong>"¿Qué harías diferente?"</strong> - Propuse mejoras: CI/CD, persistent volumes, multi-environment configs</li>
+            </ul>
+          </div>
+
+          <div class="impact-card full-width">
+            <div class="impact-icon social">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3>El Resultado</h3>
+            <p>
+              Aunque no obtuve el puesto (la empresa buscaba seniority mayor), los líderes técnicos reconocieron mi 
+              <strong>capacidad de aprendizaje acelerado</strong> y mi <strong>honestidad sobre el proceso</strong>. 
+              Me dijeron textualmente: <em>"Es impresionante lo que lograste en una semana. La mayoría no llega 
+              a esto ni con un mes"</em>.
+            </p>
+            <p>
+              Más importante aún, este proyecto me enseñó que <strong>puedo aprender cualquier tecnología 
+              rápidamente si tengo motivación y recursos adecuados</strong>. La IA es solo una herramienta más 
+              - lo importante es saber qué preguntar, cómo validar las respuestas, y entender profundamente lo 
+              que estás implementando.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY IMPLEMENTATIONS -->
+    <section class="project-section">
+      <h2 class="section-title">Implementaciones Clave</h2>
+      <div class="section-content">
+        
+        <div class="code-highlights">
+          
+          <div class="highlight-item">
+            <h3><i class="fa-brands fa-docker"></i> Dockerfile Optimizado</h3>
+            <ul class="tech-list">
+              <li>Multi-stage build para reducir tamaño de imagen final</li>
+              <li>Base image: node:18-alpine (ligera y segura)</li>
+              <li>Copia solo archivos necesarios (no node_modules innecesarios)</li>
+              <li>Usuario no-root para seguridad</li>
+              <li>Health check integrado en el contenedor</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-dharmachakra"></i> Kubernetes Deployment</h3>
+            <ul class="tech-list">
+              <li>Replicas configurables vía Helm values</li>
+              <li>Readiness probe en /health para traffic routing</li>
+              <li>Liveness probe para auto-recovery</li>
+              <li>Resource requests y limits para scheduling eficiente</li>
+              <li>Rolling updates con maxSurge y maxUnavailable</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-server"></i> Endpoints de Demo</h3>
+            <ul class="tech-list">
+              <li><strong>GET /health:</strong> Health check que Kubernetes consume</li>
+              <li><strong>GET /demo/fail:</strong> Simula crash del servidor (exit code 1) para ver auto-recovery</li>
+              <li><strong>GET /demo/stress:</strong> Genera carga CPU por 10s para observar métricas de uso</li>
+              <li>Todos los endpoints loggeados para debugging</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-chart-line"></i> Monitoreo Implementado</h3>
+            <ul class="tech-list">
+              <li>Prometheus scraping cada 30 segundos</li>
+              <li>Métricas de sistema: CPU, memoria, network I/O</li>
+              <li>Métricas de app: request count, error rate, response time</li>
+              <li>Dashboards en Grafana: Cluster overview, Pod metrics, App performance</li>
+              <li>Alertas configuradas para pod restarts y alta latencia</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="project-cta">
+      <div class="cta-content">
+        <h2>¿Quieres Ver la Implementación?</h2>
+        <p>El código completo con documentación está en GitHub</p>
+        <div class="cta-buttons">
+          <a href="https://github.com/ErickNoguera/aboutme-devops.git" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-brands fa-github"></i>
+            Ver Repositorio
+          </a>
+          <a href="https://github.com/ErickNoguera/aboutme-devops/blob/main/README.md" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-book"></i>
+            Leer Documentación
+          </a>
+          <a href="../index.html#portfolio" class="btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            Ver Más Proyectos
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2024 Erick Noguera | Full Stack Developer - AWS Cloud Practitioner</p>
+      <div class="footer-links">
+        <a href="https://github.com/ErickNoguera" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erickyosethnogueraolaizola" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:erick.noguera0410@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>
