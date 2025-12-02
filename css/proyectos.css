@@ -832,4 +832,53 @@
         width: 100%;
         justify-content: center;
     }
+
+    /* ==========================================
+   FIX: Botones CTA responsivos en móvil
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+  /* Reducir padding de los botones en móvil */
+  .project-cta .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem; /* Agregar padding al contenedor */
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 0.875rem 1.5rem !important; /* Reducir padding lateral */
+    font-size: 0.9rem !important;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Asegurar que el contenedor no cause overflow */
+  .project-cta .cta-content {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Ajustar el contenedor principal */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* Para pantallas muy pequeñas (menos de 400px) */
+@media screen and (max-width: 400px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    padding: 0.75rem 1rem !important; /* Aún más pequeño */
+    font-size: 0.85rem !important;
+  }
+}
 }

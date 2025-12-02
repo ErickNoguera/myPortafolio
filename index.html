@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Template portafolio " />
-    <title>Portafolio</title>
+    <title>Portafolio Erick</title>
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -22,7 +22,6 @@
   </head>
 
   <body>
-    <h1>hola mundo</h1>
     <!--HEADER-->
     <header class="flex w-full fixed top-0 z-1">
       <nav class="flex justify-content-between w-full navbar">
@@ -41,14 +40,14 @@
         </div>
         <div class="header_info flex align-items-center gap-3">
           <ul class="flex flex-column xl:flex-row list-none">
-            <li>Sobre mi</li>
-            <li>Servicios</li>
-            <li>Portafolio</li>
-            <li>Contacto</li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
           <div class="hireMe_button pt-4">
             <a
-              href="mailTo:erick.noguera0410@gmail.com"
+              href="mailto:erick.noguera0410@gmail.com"
               aria-label="Enviar mensaje al correo"
               class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm"
               >Contratame</a
@@ -75,7 +74,7 @@
           </p>
           <div class="home_buttons flex align-items-center gap-2 mt-6">
             <a
-              href="./asets/Curriculo Erick Noguera3.pdf"
+              href="./asets/CV Erick - Jr Platform Engineers.pdf"
               aria-label="Descargar curriculum"
               class="cursor-pointer border-round-lg"
               download
@@ -737,12 +736,15 @@
             </div>
             <!-- Proyecto 6: IU Tienda Online -->
             <div class="proyect_card show" data-category="iu_tienda_online">
-              <div class="proyect_image">
-                <img
-                  src="./asets/IU Tienda Online/Captura de pantalla 2025-11-29 133508.png"
-                  alt="IU tienda Online"
-                />
-              </div>
+              <a href="./proyectos/iu_tienda_online.html" class="proyect_image_link">
+                <div class="proyect_image">
+                  <img src="./asets/IU Tienda Online/Captura de pantalla 2025-11-29 133508.png" alt="IU Tienda Online"/>
+                  <div class="image-overlay">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>Ver Proyecto Completo</span>
+                  </div>
+                </div>
+              </a>
               <div class="proyect_content">
                 <h3 class="proyect_title">IU Tienda Online (Proyecto Real)</h3>
                 <span class="proyect_subtitle">E-comerce Real Wordpress</span>
@@ -787,13 +789,14 @@
                 </div>
 
                 <div class="proyect_links">
-                  <a
-                    href="#"
-                    class="proyect_link secondary"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fa-solid fa-globe"></i> Visitar Sitio
+                  <a href="./proyectos/iu-tienda-online.html" class="proyect_link">
+                    <i class="fa-solid fa-info-circle"></i> Ver Detalles
+                  </a>
+                  <a href="https://iutiendaonline.com/" 
+                    class="proyect_link secondary" 
+                    target="_blank" 
+                    rel="noopener">
+                    <i class="fa-solid fa-globe"></i> Ver Sitio en Vivo
                   </a>
                 </div>
               </div>

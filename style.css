@@ -33,6 +33,14 @@ body {
     position: relative;
 }
 
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .logo img {
     width: 120px;
     height: auto;
