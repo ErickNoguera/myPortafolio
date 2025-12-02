@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="Proyecto Auto-volt.cl - Plataforma Real de Electromovilidad | Erick Noguera" />
+  <title>Auto-volt.cl | Erick Noguera</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/proyectos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+  <script src="https://kit.fontawesome.com/6f90d2228a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="project-detail-page">
+  
+  <!-- NAVIGATION -->
+  <nav class="project-nav">
+    <div class="container">
+      <a href="../index.html#portfolio" class="back-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Volver al Portafolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="project-category">Proyecto Real en Producción · Python + Django · Microservicio Node.js + IA</span>
+        <h1 class="project-title">Auto-volt.cl</h1>
+        <p class="project-tagline">Plataforma real de electromovilidad en Chile con más de 89 automotoras scraped. Aprendí Python, propuse e implementé microservicio con IA que mejoró la certeza de datos del 60% al 90%</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <i class="fa-solid fa-calendar"></i>
+            <span>Junio 2025 - Presente</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Junior Backend Developer</span>
+          </div>
+          <div class="meta-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Proyecto Real · Voluntario</span>
+          </div>
+        </div>
+
+        <div class="project-links-hero">
+          <a href="https://auto-volt.cl/" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-solid fa-globe"></i>
+            Visitar Auto-volt.cl
+          </a>
+          <a href="https://auto-volt.cl/autos-electricos/" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-car"></i>
+            Ver Catálogo de Vehículos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE GALLERY -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2 class="section-title">La Plataforma en Producción</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item main-image">
+          <img src="../asets/Auto-volt.cl/Captura de pantalla 2025-10-24 103243.png" 
+               alt="Auto-volt.cl - Página Principal" 
+               class="gallery-img"
+               data-index="0">
+          <div class="image-caption">Página Principal - Plataforma de Electromovilidad</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Auto-volt.cl/Captura de pantalla 2025-12-01 210130.png" 
+               alt="Auto-volt.cl - Catálogo de Vehículos" 
+               class="gallery-img"
+               data-index="1">
+          <div class="image-caption">Catálogo Completo de Vehículos Eléctricos</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Auto-volt.cl/Captura de pantalla 2025-12-01 210428.png" 
+               alt="Auto-volt.cl - Detalle de Vehículo" 
+               class="gallery-img"
+               data-index="2">
+          <div class="image-caption">Fichas Detalladas con Datos Scraped</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Auto-volt.cl/Captura de pantalla 2025-12-01 210518.png" 
+               alt="Auto-volt.cl - Comparador" 
+               class="gallery-img"
+               data-index="3">
+          <div class="image-caption">Herramientas de Comparación</div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="../asets/Auto-volt.cl/Captura de pantalla 2025-12-01 210555.png" 
+               alt="Auto-volt.cl - Guías" 
+               class="gallery-img"
+               data-index="4">
+          <div class="image-caption">Guías y Recursos Educativos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+    <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+  </div>
+
+  <div class="container">
+    
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+      <h2 class="section-title">El Proyecto</h2>
+      <div class="section-content">
+        <p class="lead-text">
+          Auto-volt.cl es una plataforma real de electromovilidad en Chile que centraliza toda la oferta de vehículos 
+          eléctricos e híbridos del país. Me uní al proyecto en Junio 2025 como Junior Backend Developer en modalidad 
+          voluntaria para adquirir experiencia en un producto real en producción.
+        </p>
+        
+        <p>
+          Trabajo directamente con <strong>Nicolás Núñez</strong>, socio fundador y líder técnico con más de 12 años 
+          de experiencia, quien supervisa mi trabajo mediante revisiones de código en GitHub. Aunque es voluntario 
+          (sin remuneración), esta oportunidad me está permitiendo aprender en un entorno profesional real, trabajar 
+          con metodología Scrum, y contribuir a un MVP funcional que arrancó desde cero.
+        </p>
+
+        <p>
+          El desafío principal del proyecto era automatizar la extracción de información de más de 89 automotoras 
+          chilenas para mantener actualizado el catálogo de vehículos. Inicialmente trabajábamos con Selenium, 
+          pero propuse crear un microservicio independiente con Node.js + TypeScript + Stagehand (framework con IA), 
+          lo cual mejoró la certeza de datos extraídos del 60% al 90%.
+        </p>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-rocket"></i> Mi Contribución al Proyecto</h3>
+          <p>
+            <strong>Rol:</strong> Junior Backend Developer (Voluntario)<br>
+            <strong>Supervisor:</strong> Nicolás Núñez (Socio fundador, 12+ años exp.)<br>
+            <strong>Período:</strong> Junio 2024 - Presente (6+ meses activo)<br>
+            <strong>Metodología:</strong> Scrum con dailies y sprints semanales<br>
+            <strong>Estado:</strong> MVP funcional en producción desde Diciembre 2024
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY MAJOR CONTRIBUTION -->
+    <section class="project-section">
+      <h2 class="section-title">Mi Aporte Principal: Microservicio con IA</h2>
+      <div class="section-content">
+        
+        <div class="problem-solution">
+          <div class="problem">
+            <h3><i class="fa-solid fa-exclamation-circle"></i> El Problema</h3>
+            <p>
+              El equipo venía trabajando con <strong>Selenium en Python</strong> para scraping de las 89+ automotoras. 
+              Sin embargo, la certeza de datos extraídos era solo del 60% debido a cambios constantes en las estructuras 
+              HTML de los sitios web, lo que generaba datos inconsistentes y mucho trabajo manual de corrección.
+            </p>
+          </div>
+          <div class="solution">
+            <h3><i class="fa-solid fa-lightbulb"></i> Mi Propuesta</h3>
+            <p>
+              Investigué y descubrí <strong>Stagehand</strong>, un framework de web scraping potenciado con IA que se 
+              adapta automáticamente a cambios en las páginas. Propuse crear un <strong>microservicio independiente 
+              con Node.js + TypeScript</strong> que funcionara en paralelo al código principal de Django.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fa-solid fa-trophy"></i> El Desafío de Convencer al Equipo</h3>
+          <p>
+            No fue fácil. Nicolás es experto en Python/Django, pero no conocía TypeScript ni Node.js. Proponer 
+            introducir un stack completamente diferente significaba que <strong>yo asumiría toda la responsabilidad</strong> 
+            del microservicio. Me costó convencerlos, pero logré demostrar que valía la pena:
+          </p>
+          <ul class="tech-list">
+            <li>Presenté investigación sobre Stagehand y sus ventajas con IA</li>
+            <li>Expliqué por qué Node.js era mejor para este caso específico (async, npm ecosystem)</li>
+            <li>Me comprometí a ser el único responsable de su desarrollo y mantenimiento</li>
+            <li>Propuse dockerizarlo para que fuera completamente independiente</li>
+          </ul>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-icon learning">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Desarrollo del Microservicio</h3>
+            <ul>
+              <li><strong>2 semanas:</strong> Montar la infraestructura base (Node.js, TypeScript, Stagehand, Docker)</li>
+              <li><strong>2 semanas más:</strong> Poner a funcionar y extraer información correctamente</li>
+              <li><strong>Total: 1 mes</strong> desde idea hasta producción funcional</li>
+              <li>Trabajé completamente solo en esta parte del sistema</li>
+            </ul>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon success">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Resultados Medibles</h3>
+            <ul>
+              <li><strong>60% → 90%:</strong> Mejora en certeza de datos extraídos</li>
+              <li><strong>89+ automotoras:</strong> Scraped de forma automatizada</li>
+              <li><strong>Microservicio independiente:</strong> Dockerizado y desacoplado</li>
+              <li><strong>Menor mantenimiento:</strong> IA se adapta a cambios en sitios web</li>
+              <li><strong>Producción:</strong> Funcionando actualmente en auto-volt.cl</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="project-section">
+      <h2 class="section-title">Mis Responsabilidades</h2>
+      <div class="section-content">
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h3>Desarrollo Backend en Python/Django</h3>
+            <p>
+              Aunque nunca había trabajado con Python, aprendí rápidamente bajo la supervisión de Nicolás. 
+              Desarrollo y modifico endpoints en Django, trabajo con modelos de base de datos PostgreSQL, 
+              y manejo lógica de negocio del backend principal.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <h3>Microservicio de Scraping con IA</h3>
+            <p>
+              Soy el <strong>único responsable</strong> del microservicio Node.js + TypeScript + Stagehand. 
+              Lo construí desde cero, lo dockericé, y mantengo toda su lógica de extracción de datos de 
+              las 89+ automotoras chilenas.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-docker"></i>
+            </div>
+            <h3>Dockerización y Deploy</h3>
+            <p>
+              Dockericé el microservicio para que funcione completamente independiente del código principal. 
+              Configuré Docker Compose, variables de entorno, y aseguré que pudiera desplegarse en Google 
+              Cloud Platform sin conflictos.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <h3>Workflow con Git y Code Reviews</h3>
+            <p>
+              Trabajo con flujo profesional de Git: creo branches por feature, monto pull requests en GitHub, 
+              Nicolás revisa mi código y hace los merges a main. Aprendí a trabajar con code reviews reales 
+              y feedback constructivo.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Metodología Scrum</h3>
+            <p>
+              Participación activa en dailies (reuniones diarias) y sprints semanales. Recibo tareas asignadas, 
+              estimo tiempos, reporto avances, y aprendo a trabajar en equipo con metodologías ágiles profesionales.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Base de Datos PostgreSQL</h3>
+            <p>
+              Trabajo con PostgreSQL en producción: diseño de modelos, migraciones, queries optimizadas, 
+              y manejo de relaciones entre vehículos, automotoras, precios y especificaciones técnicas.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="project-section">
+      <h2 class="section-title">Stack Tecnológico</h2>
+      <div class="section-content">
+        <div class="tech-stack-grid">
+          
+          <div class="tech-category">
+            <h3><i class="fa-brands fa-python"></i> Backend Principal</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-tag">Django REST Framework</span>
+            </div>
+            <p class="tech-description">
+              Mi primera vez con Python profesionalmente. Aprendí Django, ORM de Django, migraciones, 
+              serializers, views y toda la arquitectura de un proyecto Django en producción. Nicolás 
+              me supervisa y me enseña mejores prácticas de Python.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-brands fa-node-js"></i> Microservicio de Scraping</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+              <span class="tech-tag"><i class="fa-brands fa-js"></i> TypeScript</span>
+              <span class="tech-tag">Stagehand (IA)</span>
+              <span class="tech-tag">Playwright</span>
+            </div>
+            <p class="tech-description">
+              Microservicio que yo propuse e implementé desde cero. Stagehand usa IA para adaptarse 
+              automáticamente a cambios en sitios web, reduciendo dramáticamente el mantenimiento del 
+              scraping. TypeScript me dio type safety para un código más robusto.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-brands fa-docker"></i> DevOps</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Google Cloud Platform</span>
+              <span class="tech-tag">CI/CD</span>
+            </div>
+            <p class="tech-description">
+              Dockericé tanto el microservicio como el proyecto principal. Configuré Docker Compose 
+              para orquestar múltiples servicios, y trabajamos con GCP para hosting y deployment 
+              en producción.
+            </p>
+          </div>
+
+          <div class="tech-category">
+            <h3><i class="fa-solid fa-tools"></i> Herramientas</h3>
+            <div class="tech-tags">
+              <span class="tech-tag"><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
+              <span class="tech-tag">Pull Requests</span>
+              <span class="tech-tag">Code Reviews</span>
+              <span class="tech-tag">Scrum</span>
+            </div>
+            <p class="tech-description">
+              Workflow profesional con Git: branches por feature, pull requests detalladas, 
+              code reviews de Nicolás antes de cada merge, y metodología Scrum con sprints semanales.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING JOURNEY -->
+    <section class="project-section">
+      <h2 class="section-title">Mi Proceso de Aprendizaje</h2>
+      <div class="section-content">
+        
+        <div class="impact-grid">
+          
+          <div class="impact-card">
+            <div class="impact-icon learning">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Aprendiendo Python en Producción</h3>
+            <p>
+              Nunca había trabajado con Python antes de Auto-volt. Fue intimidante al principio, pero con la 
+              guía de Nicolás y la necesidad de entregar features funcionales, aprendí rápido:
+            </p>
+            <ul>
+              <li>Sintaxis y paradigmas de Python (indentación, duck typing, comprehensions)</li>
+              <li>Django: modelos, vistas, serializers, migraciones, admin panel</li>
+              <li>ORM de Django para queries complejas</li>
+              <li>Gestión de dependencias con pip y virtual environments</li>
+              <li>Debugging en Python y Django Debug Toolbar</li>
+            </ul>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon success">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>Iniciativa y Propuesta Técnica</h3>
+            <p>
+              Este proyecto me enseñó que no solo se trata de escribir código que te asignan. También se trata 
+              de <strong>identificar problemas, investigar soluciones, y proponer mejoras</strong>:
+            </p>
+            <ul>
+              <li>Identifiqué limitaciones del scraping con Selenium</li>
+              <li>Investigué alternativas modernas (descubrí Stagehand)</li>
+              <li>Preparé una propuesta técnica convincente</li>
+              <li>Asumí responsabilidad completa de la implementación</li>
+              <li>Demostré con resultados: 60% → 90% de certeza</li>
+            </ul>
+          </div>
+
+          <div class="impact-card full-width">
+            <div class="impact-icon social">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Por Qué Trabajo Sin Remuneración</h3>
+            <p>
+              Aunque es voluntario, esta experiencia vale más que muchos trabajos pagados. Estoy aprendiendo:
+            </p>
+            <ul>
+              <li><strong>Mentoría real:</strong> Nicolás revisa cada línea de mi código y me enseña</li>
+              <li><strong>Producto en producción:</strong> No es un proyecto de práctica, es auto-volt.cl real</li>
+              <li><strong>Responsabilidad:</strong> Soy dueño del microservicio completo, nadie más lo maneja</li>
+              <li><strong>Python nuevo:</strong> Aprendiendo un lenguaje que no conocía en entorno profesional</li>
+              <li><strong>Metodología Scrum:</strong> Dailies, sprints, estimaciones, retrospectivas</li>
+              <li><strong>Trabajo en equipo:</strong> Code reviews, feedback, iteración</li>
+            </ul>
+            <p>
+              Este proyecto me está preparando para roles pagados más senior. Estoy construyendo experiencia 
+              real que puedo demostrar en entrevistas, y aprendiendo directamente de alguien con 12+ años de 
+              experiencia. Para mí, en esta etapa de mi carrera, eso vale mucho más que un sueldo junior.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL DETAILS -->
+    <section class="project-section">
+      <h2 class="section-title">Detalles Técnicos del Microservicio</h2>
+      <div class="section-content">
+        
+        <div class="code-highlights">
+          
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-robot"></i> Stagehand con IA</h3>
+            <ul class="tech-list">
+              <li>Framework de scraping que usa IA para entender estructura de páginas</li>
+              <li>Se adapta automáticamente a cambios en HTML/CSS sin romper scrapers</li>
+              <li>Reduce mantenimiento: no necesito reescribir selectores cada vez que cambian sitios</li>
+              <li>Mejora extracción de datos no estructurados usando visión artificial</li>
+              <li>Maneja JavaScript dinámico y SPAs sin problemas</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-brands fa-docker"></i> Arquitectura Dockerizada</h3>
+            <ul class="tech-list">
+              <li>Dockerfile optimizado para Node.js + TypeScript</li>
+              <li>Multi-stage build para reducir tamaño de imagen final</li>
+              <li>Docker Compose para orquestar microservicio + DB + servicios auxiliares</li>
+              <li>Variables de entorno para configuración por ambiente (dev/prod)</li>
+              <li>Volúmenes para persistencia de datos scraped</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-chart-line"></i> Mejora de Certeza: 60% → 90%</h3>
+            <ul class="tech-list">
+              <li><strong>Antes (Selenium):</strong> Selectores CSS frágiles que rompían con cambios mínimos</li>
+              <li><strong>Después (Stagehand IA):</strong> IA entiende contexto y encuentra datos automáticamente</li>
+              <li>Validación cruzada de datos extraídos con múltiples fuentes</li>
+              <li>Sistema de confianza: marca datos con probabilidad de certeza</li>
+              <li>Logs detallados para debugging cuando hay inconsistencias</li>
+            </ul>
+          </div>
+
+          <div class="highlight-item">
+            <h3><i class="fa-solid fa-network-wired"></i> Integración con Backend Django</h3>
+            <ul class="tech-list">
+              <li>API REST para comunicación entre microservicio y Django</li>
+              <li>Cola de tareas para scraping asíncrono (no bloquea requests)</li>
+              <li>Webhooks para notificar a Django cuando hay datos nuevos</li>
+              <li>Sistema de retry con exponential backoff para sitios lentos</li>
+              <li>Cache de resultados para evitar re-scraping innecesario</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="project-cta">
+      <div class="cta-content">
+        <h2>¿Quieres Ver la Plataforma en Acción?</h2>
+        <p>Auto-volt.cl está en producción y funcionando con el microservicio que desarrollé</p>
+        <div class="cta-buttons">
+          <a href="https://auto-volt.cl/" target="_blank" rel="noopener" class="btn-primary">
+            <i class="fa-solid fa-globe"></i>
+            Visitar Auto-volt.cl
+          </a>
+          <a href="https://auto-volt.cl/autos-electricos/" target="_blank" rel="noopener" class="btn-secondary">
+            <i class="fa-solid fa-car"></i>
+            Ver Catálogo de Vehículos
+          </a>
+          <a href="https://wa.me/56932841056" target="_blank" class="btn-primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            Escríbeme por WhatsApp
+          </a>
+          <a href="../index.html#portfolio" class="btn-outline">
+            <i class="fa-solid fa-arrow-left"></i>
+            Ver Más Proyectos
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2024 Erick Noguera | Full Stack Developer - AWS Cloud Practitioner</p>
+      <div class="footer-links">
+        <a href="https://github.com/ErickNoguera" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/erickyosethnogueraolaizola" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:erick.noguera0410@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/56932841056" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/lightbox.js"></script>
+</body>
+
+</html>
